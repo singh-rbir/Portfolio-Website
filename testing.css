@@ -1,0 +1,165 @@
+body {
+    justify-content: center;
+}
+
+.header{
+    background-color: #D4E4F7;
+}
+
+.header h1 {
+  font-family: monospace;
+  letter-spacing: .15em; /* Adjust as needed */
+  color: #341C09;
+}
+
+#social_links img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#social_links a{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+#social_links a:hover{
+    transition: 0.5s ease;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: #341C09;
+    border-bottom: 0.2rem solid #FC7307;
+    opacity: 0.94;
+}
+
+.navbar:hover{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 0.3rem solid #FC7307;
+    transition: 0.4s ease;
+    opacity: 1.0;
+}
+
+.navbar a:hover{
+    color: #d3d3d3;
+    border-bottom: 2px solid;
+    padding-bottom: 0;
+    transition: 0.4s ease;
+}
+
+/* Following two scroll classes for making navbar-brand appear/disappear on scoll */
+
+.beforeScroll{
+    height: auto;
+    display: none;
+}
+
+.afterScroll{
+    display: inline-block;
+    animation: fadeEffect 1s;
+}
+
+/* *********************** */
+
+#intro{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #236AB9;
+    height: 90vh;
+}
+
+#about_me{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #FC7307;
+    height: 90vh;
+}
+
+#experience_me{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #D4E4F7;
+}
+
+#contact_me{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #B85B14;
+}
+
+#intro h2{
+    font: 5rem bold;
+}
+
+#experience img{
+    height: 15rem;
+    width: auto;
+}
+
+#inner_container{
+    background-color: #FB9118;
+}
+
+/* Keep those elements hidden at first. Each type of element has a little different animation*/
+.container-headers{
+    opacity: 0;
+    transform: translateY(-5em) rotateY(-10deg);
+    transition: transform 2.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+                opacity 0.3s 0.25s ease-out;
+    will-change: transform, opacity;
+}
+
+.container-titles{
+    opacity: 0;
+    transform: translateY(-5em) rotateZ(-10deg);
+    transition: transform 2.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+                opacity 0.3s 0.25s ease-out;
+    will-change: transform, opacity;
+}
+
+.container-bodys{
+    opacity: 0;
+    transform: translateY(5em) rotateZ(-10deg);
+    transition: transform 2.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+                opacity 0.3s 0.25s ease-out;
+    will-change: transform, opacity;
+}
+
+/* Making the above elements visible with animation*/
+.container-headers.is-visible{
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.container-titles.is-visible{
+    opacity: 1;
+    transform: rotateX(-2deg);
+}
+
+.container-bodys.is-visible{
+    opacity: 1;
+    transform: rotateZ(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANIMATIONS *****************************************************************/
+
+@keyframes fadeEffect {
+    from {opacity: 0; transform: translateY(-4em);
+                transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+                opacity 2.0s 0.25s ease-out;}
+    to {opacity: 1;}
+}
