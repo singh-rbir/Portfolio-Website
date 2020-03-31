@@ -36,6 +36,10 @@ body {
     opacity: 0.94;
 }
 
+.navbar ul{
+    animation: fadeEffect 1.5s;
+}
+
 .navbar:hover{
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
@@ -108,8 +112,8 @@ body {
 /* Keep those elements hidden at first. Each type of element has a little different animation*/
 .container-headers{
     opacity: 0;
-    transform: translateY(-5em) rotateY(-10deg);
-    transition: transform 2.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    transform: translateY(4em) rotateY(-10deg);
+    transition: transform 4.5s 0.25s cubic-bezier(0.1, 1, 0.3, 1),
                 opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity;
 }
