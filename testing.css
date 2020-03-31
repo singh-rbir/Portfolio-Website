@@ -7,14 +7,16 @@ body {
 }
 
 .header h1 {
-  font-family: monospace;
-  letter-spacing: .15em; /* Adjust as needed */
-  color: #341C09;
+    font-family: monospace;
+    letter-spacing: .15em; /* Adjust as needed */
+    color: #341C09;
+    animation: fadeEffect 1.5s;
 }
 
 #social_links img{
     height: 1.5rem;
     width: 1.5rem;
+    animation: fadeEffect 1.5s;
 }
 
 #social_links a{
@@ -68,6 +70,7 @@ body {
     padding-bottom: 4rem;
     background-color: #236AB9;
     height: 90vh;
+    overflow: auto;
 }
 
 #about_me{
@@ -158,7 +161,7 @@ body {
 /* ANIMATIONS *****************************************************************/
 
 @keyframes fadeEffect {
-    from {opacity: 0; transform: translateY(-4em);
+    from {opacity: 0; transform: translateY(-4em) rotateY(-10deg);
                 transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
                 opacity 2.0s 0.25s ease-out;}
     to {opacity: 1;}
