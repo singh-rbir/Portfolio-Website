@@ -67,7 +67,7 @@
             <div class="collapse navbar-collapse justify-content-center my-0" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a href="#about_me" class="nav-link px-3 fade show">About Me</a>
+                        <a href="#about_me" class="nav-link px-3 fade show">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="#experience_me" class="nav-link px-3 fade show">Experience & Projects</a>
@@ -88,7 +88,7 @@
 
     <!-- ScrollSpy for the whole page on top ********************************-->
 
-    <div data-spy="scroll" data-target="#topNavBar" data-offset="0" id="scroll_data">
+    <div data-spy="scroll" data-target="#topNavBar" data-offset="50" id="scroll_data">
         <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
         <div class="container-fluid-sm" id="intro">
@@ -103,7 +103,7 @@
         <!-- ABOUT ME ******************************** -->
         <div class="container-fluid-sm" id="about_me">
             <div class="container">
-                <h2 class="container-titles show-on-scroll">About Me</h2>
+                <h2 class="container-titles show-on-scroll">About</h2>
                 <br>
             </div>
 
@@ -114,28 +114,41 @@
             <div class="container">
                 <h2 class="container-titles show-on-scroll">Experience & Projects</h2>
                 <br>
-                <div class="container">
+                <div class="container-fluid-xl">
                     <div class="card-deck" id="experience">
                         <!-- voice alarm app -->
                         <div class="card container-bodys show-on-scroll">
-                            <img src="images/abstract_2.jpg" class="card-img-top" alt="abstract_2">
+                            <img class="card-img-top" src="images/abstract_2.jpg" alt="abstract_2">
                             <div class="card-body">
                                 <h2 class="card-title text-center">Voice Alarm - android app</h2>
-                                <p class="card-text">An android app that uses voice recognition to wake you up in the morning. Once the alarm goes off, it can only be dimissed by reading the text shown on the screen, into phone's mic.
-                                <br>
-                                This engages the groggy user's mind to put some effort into waking up.
-                                </p>
+                                <ul class="card-text">
+                                    <li>An android app that uses voice recognition to wake you up in the morning</li>
+                                    <li>Once the alarm goes off, it can only be dimissed by reading the text shown on the screen, into phone's mic</li>
+                                    <li>This engages the groggy user's mind to put some effort into waking up</li>
+                                </ul>
                             </div>
                         </div>
                         <!-- peer mentor experience -->
                         <div class="card container-bodys show-on-scroll">
-                            <img src="images/peer_mentor.png" class="card-img-top" alt="peer mentoring">
+                            <img class="card-img-top" src="images/peer_mentor.png" alt="peer mentoring">
                             <div class="card-body">
                                 <h2 class="card-title text-center">Peer Mentor at YorkU</h2>
                                 <ul class="card-text">
-                                    <li>Provided students with help in JS (JQuery), HTML, CSS, JSON.</li>
-                                    <li>Occasionally directed lab materials.</li>
+                                    <li>Provided students with help in JS (JQuery), HTML, CSS, JSON</li>
+                                    <li>Occasionally directed lab materials</li>
                                     <li>Submitted student evaluations to the Professor for EECS1012</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Codify - Student Club member experince -->
+                        <div class="card container-bodys show-on-scroll">
+                            <img class="card-img-top" src="images/abstract_2.jpg" alt="abstract_2">
+                            <div class="card-body">
+                                <h2 class="card-title text-center">CodeFi Member - Student Club</h2>
+                                <ul class="card-text">
+                                    <li>Occasionally teaching basic Web Dev. skills to 1st year students</li>
+                                    <li>Maintaining a fun and learning environment for beginners</li>
+                                    <li>General club duties as required </li>
                                 </ul>
                             </div>
                         </div>

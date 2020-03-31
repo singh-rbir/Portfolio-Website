@@ -67,6 +67,7 @@ body {
 .afterScroll{
     display: inline-block;
     animation: fadeEffect 1s;
+
 }
 
 /* BODY STARTS HERE********************************************************* */
@@ -95,6 +96,7 @@ body {
     padding-bottom: 4rem;
     background-color: #FC7307;
     height: 90vh;
+    overflow: auto;
 }
 
 /* EXPERIENCE SECTION *************************** */
@@ -102,9 +104,11 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #D4E4F7;
+    overflow: auto;
 }
 
 #experience img{
+    justify-content: center;
     height: 15rem;
     width: auto;
 }
