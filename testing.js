@@ -17,7 +17,7 @@ $(document).ready(function(){
         }
     });
 
-    
+
     var scroll = window.requestAnimationFrame ||
             function(callback){ window.setTimeout(callback, 1000/60)};
 
@@ -27,8 +27,6 @@ $(document).ready(function(){
         elementsToShow.forEach(function (element) {
             if (isElementInViewport(element)) {
                 element.classList.add('is-visible');
-            } else {
-                element.classList.remove('is-visible');
             }
         });
 
