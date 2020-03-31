@@ -67,8 +67,9 @@ body {
     animation: fadeEffect 1s;
 }
 
-/* *********************** */
+/* BODY STARTS HERE********************************************************* */
 
+/* INTRO SECTION ********************************* */
 #intro{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -77,6 +78,16 @@ body {
     overflow: auto;
 }
 
+#intro h2{
+    font: 5rem bold;
+}
+
+#intro-top{
+    animation: fadeEffect 1.5s;
+}
+
+/* ABOUT SECTION ******************************** */
+
 #about_me{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -84,25 +95,24 @@ body {
     height: 90vh;
 }
 
+/* EXPERIENCE SECTION *************************** */
 #experience_me{
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #D4E4F7;
 }
 
+#experience img{
+    height: 15rem;
+    width: auto;
+}
+
+/* CONTACT SECTION ****************************** */
+
 #contact_me{
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #B85B14;
-}
-
-#intro h2{
-    font: 5rem bold;
-}
-
-#experience img{
-    height: 15rem;
-    width: auto;
 }
 
 #inner_container{
