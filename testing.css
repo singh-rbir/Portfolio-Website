@@ -8,8 +8,8 @@ body {
     background-color: #D4E4F7;
 }
 
-.header h1 {
-    font-family: monospace;
+.header h2 {
+    font-family: Helvetica;
     letter-spacing: .15em; /* Adjust as needed */
     color: #341C09;
     animation: fade-effect 0.75s;
@@ -23,14 +23,18 @@ body {
 }
 
 #social_links a{
+    position: relative;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
 }
 
 #social_links a:hover{
-    transition: 0.5s ease;
+    transition: 0.5s ease; /* makes the opacity effect go-in and come-out slowly */
     opacity: 0.7;
     text-decoration: none;
+    animation: hovering-effect 1.5s ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .navbar{
@@ -71,19 +75,28 @@ body {
     animation: fade-effect 1s;
 }
 
-/* BODY STARTS HERE********************************************************* */
+/* ***********************BODY STARTS HERE************************************** */
 
 /* INTRO SECTION ********************************* */
 #intro{
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color: #236AB9;
+    /* background-color: #236AB9; */
     height: 90vh;
     overflow: auto;
 }
 
+#intro h2:first-child{
+    font-weight: bold;
+}
+
+#intro h2:first-child::first-letter{
+    font-family: fantasy;
+}
+
 #intro h2{
-    font: 5rem bold;
+    font: 5em bold;
+    font-family: monospace;
 }
 
 #intro-top{
@@ -93,7 +106,9 @@ body {
 #scroll-down-icon{
     position: relative;
     font-size: 2rem;
-    opacity: 0;
+    border-radius: 100%;
+    color: #341C09;
+    opacity: 0; /* initally the element will be invisible before the animation starts */
     animation: scroll-down-effect 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -159,9 +174,13 @@ body {
 
 @keyframes scroll-down-effect {
     0% {opacity: 0.4; top: 0em;}
-    100% {opacity: 1; top: 4em;}
+    100% {opacity: 1; top: 4em; background-color: white;}
 }
 
+@keyframes hovering-effect {
+    0% {top: -0.2em;}
+    100% {top: 0.2em;}
+}
 /* Keep those elements hidden at first. Each type of element has a little different animation*/
 .container-headers{
     opacity: 0;
