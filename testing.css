@@ -12,13 +12,14 @@ body {
     font-family: monospace;
     letter-spacing: .15em; /* Adjust as needed */
     color: #341C09;
-    animation: fadeEffect 0.75s;
+    animation: fade-effect 0.75s;
 }
 
 #social_links img{
     height: 1.5rem;
     width: 1.5rem;
-    animation: fadeEffect 0.75s;
+    animation: fade-effect 0.75s;
+    /* animation-delay: 0.5s; */
 }
 
 #social_links a{
@@ -39,7 +40,8 @@ body {
 }
 
 .navbar ul{
-    animation: fadeEffect 0.75s;
+    animation: fade-effect 0.75s;
+    /* animation-delay: 1s; */
 }
 
 .navbar:hover{
@@ -66,8 +68,7 @@ body {
 
 .afterScroll{
     display: inline-block;
-    animation: fadeEffect 1s;
-
+    animation: fade-effect 1s;
 }
 
 /* BODY STARTS HERE********************************************************* */
@@ -86,7 +87,17 @@ body {
 }
 
 #intro-top{
-    animation: fadeEffect 1.5s;
+    animation: fade-effect 2s;
+}
+
+#scroll-down-icon{
+    position: relative;
+    font-size: 2rem;
+    opacity: 0;
+    animation: scroll-down-effect 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4s;
 }
 
 /* ABOUT SECTION ******************************** */
@@ -139,11 +150,16 @@ body {
 
 /* ANIMATIONS ***********************************************************************************/
 
-@keyframes fadeEffect {
-    from {opacity: 0; transform: translateY(-4em) rotateY(-10deg);
+@keyframes fade-effect {
+    from {opacity: 0; transform: translateY(-5em) rotateX(-90deg);
                 transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
-                opacity 2.0s 0.25s ease-out;}
+                opacity 2.0s 0.25s ease-in;}
     to {opacity: 1;}
+}
+
+@keyframes scroll-down-effect {
+    0% {opacity: 0.4; top: 0em;}
+    100% {opacity: 1; top: 4em;}
 }
 
 /* Keep those elements hidden at first. Each type of element has a little different animation*/

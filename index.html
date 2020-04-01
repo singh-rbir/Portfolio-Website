@@ -10,6 +10,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="testing.css" type="text/css">
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -27,6 +28,8 @@
 </head>
 
 <body>
+
+    <!-- ********************************* HEADER ************************************************** -->
 
     <div class="header pt-3" id="header">
         <div class="container-fluid-sm">
@@ -51,6 +54,7 @@
         </div>
     </div>
 
+    <!-- ********************************* NAVBAR ************************************************** -->
 
     <nav class="navbar navbar-expand-sm sticky-top fade show" id="topNavBar">
         <div class="container-sm">
@@ -86,8 +90,8 @@
 
     </nav>
 
-    <!-- ScrollSpy for the whole page on top ********************************-->
 
+    <!-- ScrollSpy for the whole page on top ********************************-->
     <div data-spy="scroll" data-target="#topNavBar" data-offset="50" id="scroll_data">
         <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
@@ -95,6 +99,10 @@
             <div class="container">
                 <h2 id="intro-top">So,</h2><br>
                 <h2 class="container-headers show-on-scroll" id="intro-bottom">You found me...</h2>
+                <div class="container text-center">
+                    <i class="fas fa-arrow-alt-circle-down" id="scroll-down-icon"></i>
+                </div>
+
 
             </div>
 
@@ -118,9 +126,9 @@
                     <div class="card-deck" id="experience">
                         <!-- voice alarm app -->
                         <div class="card container-bodys show-on-scroll">
-                            <img class="card-img-top" src="images/abstract_2.jpg" alt="abstract_2">
+                            <img class="card-img-top" src="images/abstract.jpg" alt="abstract">
                             <div class="card-body">
-                                <h2 class="card-title text-center">Voice Alarm - android app</h2>
+                                <h2 class="card-title text-center">Voice Alarm - <i class="fab fa-android"></i> App</h2>
                                 <ul class="card-text">
                                     <li>An android app that uses voice recognition to wake you up in the morning</li>
                                     <li>Once the alarm goes off, it can only be dimissed by reading the text shown on the screen, into phone's mic</li>
@@ -142,7 +150,7 @@
                         </div>
                         <!-- Codify - Student Club member experince -->
                         <div class="card container-bodys show-on-scroll">
-                            <img class="card-img-top" src="images/abstract_2.jpg" alt="abstract_2">
+                            <img class="card-img-top" src="images/abstract_2.jpg" alt="abstract_3">
                             <div class="card-body">
                                 <h2 class="card-title text-center">CodeFi Member - Student Club</h2>
                                 <ul class="card-text">
