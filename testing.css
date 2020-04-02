@@ -93,16 +93,24 @@ body {
 }
 
 #intro h2:first-child{ /* HEY */
-    font-weight: bold;
 }
 
 #intro h2:first-child::first-letter{ /* H */
     font-size: 2em;
-    font-family: sans-serif;
+    font-family: cursive;
 }
 
 #intro-top{
     animation: fade-effect 2s;
+}
+
+#intro-bottom{
+    background-color: white;
+    display: inline-block;
+    border-radius: 1rem;
+    border-bottom-width: thick;
+    border-bottom-color: black;
+    border-bottom-style: double;
 }
 
 #scroll-down-icon{
@@ -118,6 +126,15 @@ body {
 }
 
 /* ABOUT SECTION ******************************** */
+#about_me h2:first-child::first-letter, #experience_me h2:first-child::first-letter, #contact_me h2:first-child::first-letter{
+    font-size: 2em;
+    font-family: cursive;
+}
+
+#about_me h2:first-child, #experience_me h2:first-child, #contact_me h2:first-child{
+    border-bottom: 0.2rem solid #341C09;
+    display: inline-block;
+}
 
 #about_me{
     padding-top: 4rem;
@@ -149,10 +166,16 @@ body {
     background-color: #B85B14;
 }
 
+#contact_me h2{
+}
 
-#inner_container{
-    background-color: #FB9118;
-    display: none;
+#contact_me #social_links a{
+    display: inline-block;
+    padding: 0.2rem;
+}
+
+table{
+    display: inline-block;
 }
 
 
@@ -164,6 +187,14 @@ body {
 
 
 
+
+
+
+/* display set to none because that are is just for reference */
+#inner_container{
+    background-color: #FB9118;
+    display: none;
+}
 
 /* ANIMATIONS ***********************************************************************************/
 
