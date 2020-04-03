@@ -28,11 +28,11 @@ body {
     padding-right: 0.2rem;
 }
 
-#social_links a:hover{
+.header #social_links a:hover{
     transition: 0.5s ease; /* makes the opacity effect go-in and come-out slowly */
     opacity: 0.7;
     text-decoration: none;
-    animation: hovering-effect 1.5s ease-in;
+    animation: hovering-effect 0.5s ease-in;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -105,12 +105,11 @@ body {
 }
 
 #intro-bottom{
-    background-color: white;
     display: inline-block;
-    border-radius: 1rem;
-    border-bottom-width: thick;
-    border-bottom-color: black;
-    border-bottom-style: double;
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: white;
+    transition-timing-function: ease-in;
 }
 
 #scroll-down-icon{
@@ -125,16 +124,21 @@ body {
     animation-delay: 4s;
 }
 
-/* ABOUT SECTION ******************************** */
+/* SETTINGS COMMON TO ALL SECTIONS ******************************** */
 #about_me h2:first-child::first-letter, #experience_me h2:first-child::first-letter, #contact_me h2:first-child::first-letter{
-    font-size: 2em;
+    font-size: 3rem;
     font-family: cursive;
 }
 
 #about_me h2:first-child, #experience_me h2:first-child, #contact_me h2:first-child{
     border-bottom: 0.2rem solid #341C09;
     display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
+
+/* ABOUT SECTION *************************** */
+
 
 #about_me{
     padding-top: 4rem;
@@ -161,24 +165,29 @@ body {
 /* CONTACT SECTION ****************************** */
 
 #contact_me{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
     background-color: #B85B14;
 }
 
+#contact_me .container{
+    overflow: hidden;
+}
+
 #contact_me h2{
+
+}
+
+#contact_me table{
+    float: right;
+}
+
+#contact_me p{
+    font-family: monospace;
 }
 
 #contact_me #social_links a{
-    display: inline-block;
-    padding: 0.2rem;
+    text-decoration: none;
 }
-
-table{
-    display: inline-block;
-}
-
-
 
 
 

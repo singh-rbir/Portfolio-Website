@@ -95,13 +95,13 @@
 <!-- ********************************* MAIN CONTENT ************************************************** -->
 
     <!-- ScrollSpy for the whole page on top ********************************-->
-    <div data-spy="scroll" data-target="#topNavBar" data-offset="50" id="scroll_data">
+    <div data-spy="scroll" data-target="#topNavBar" id="scroll_data">
         <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
         <div class="container-fluid-sm bg-primary" id="intro">
             <div class="container">
-                <h2 id="intro-top">Hey!</h2>
-                <h2 class="container-headers show-on-scroll" id="intro-bottom">This is Raj.</h2>
+                <h2 class="text-light" id="intro-top">Hey!</h2>
+                <h2 class="container-headers show-on-scroll rounded p-1 bg-light" id="intro-bottom">This is Raj.</h2>
                 <div class="container text-center">
                     <i class="fas fa-arrow-alt-circle-down" id="scroll-down-icon"></i>
                 </div>
@@ -114,7 +114,7 @@
         <!-- ABOUT ME ******************************** -->
         <div class="container-fluid-sm" id="about_me">
             <div class="container">
-                <h2 class="container-titles show-on-scroll">About</h2>
+                <h2 class="container-titles show-on-scroll bg-light rounded">About</h2>
                 <br>
             </div>
 
@@ -123,7 +123,7 @@
         <!-- EXPERIENCE AND PROJECTS **************** -->
         <div class="container-fluid-sm" id="experience_me">
             <div class="container">
-                <h2 class="container-titles show-on-scroll">Experience & Projects</h2>
+                <h2 class="container-titles show-on-scroll bg-light rounded">Experience & Projects</h2>
                 <br>
                 <div class="container-fluid-xl">
                     <div class="card-deck" id="experience">
@@ -172,32 +172,19 @@
         <!-- CONTACT ******************** -->
         <div class="container-fluid-sm" id="contact_me">
             <div class="container">
-                <h2 class="container-titles show-on-scroll">Contact</h2><br>
-                <div class="p-2 bg-light text-right d-none" id="social_links">
-                    <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
-                        Github <img src="images/git_logo.dms" alt="git">
-                    </a>
-                    <a href="https://www.linkedin.com/in/singh-rbir/" class="fade show" target="_blank">
-                        LinkedIn <img src="images/linked_in_logo.png" alt="in">
-                    </a>
-                    <a href="https://www.facebook.com/singh.rbir" class="fade show" target="_blank">
-                        Facebook <img src="images/fb-logo.png" alt="fb">
-                    </a>
-                    <a href="mailto:singh.rbir@gmail.com?Subject=Hi%20there!%20I%20found%20your%20portfolio" class="fade show" target="_top">
-                        Email <img src="images/email_logo.dms" alt="em">
-                    </a>
-                </div>
+                <h2 class="container-titles show-on-scroll bg-light rounded">Contact</h2>
+                <br>
 
-                <table class="table text-center bg-light w-auto table-borderless rounded container-bodys show-on-scroll">
+                <table class="table text-right bg-light w-auto table-borderless rounded container-bodys show-on-scroll">
                     <thead>
                         <tr>
-                            <th>Social Media</th>
+                            <th class="border-right">Social Media</th>
                             <th>Business inquiries</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="social_links">
+                            <td id="social_links" class="border-right">
                                 <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
                                 Github <img src="images/git_logo.dms" alt="git">
                                 </a>
@@ -209,14 +196,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <td id="social_links">
+                            <td id="social_links" class="border-right">
                                 <a href="https://www.linkedin.com/in/singh-rbir/" class="fade show" target="_blank">
                                     LinkedIn <img src="images/linked_in_logo.png" alt="in">
                             </td>
                             <td id="social_links">(+1) 204-955-5272 <i class="fas fa-mobile-alt"></i></td>
                         </tr>
                         <tr>
-                            <td id="social_links">
+                            <td id="social_links" class="border-right">
                                 <a href="https://www.facebook.com/singh.rbir" class="fade show" target="_blank">
                                     Facebook <img src="images/fb-logo.png" alt="fb">
                                 </a>
@@ -225,6 +212,9 @@
                     </tbody>
                 </table>
 
+            </div>
+            <div class="container">
+                <p class="text-light text-right">&copy Copyright 2020</p>
             </div>
 
         </div>
