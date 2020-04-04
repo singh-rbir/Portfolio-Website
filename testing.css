@@ -87,8 +87,14 @@ body {
 }
 
 #intro h2{
-    font: 4em bold;
+    font: 5em bold;
     font-family: monospace;
+}
+
+@media only screen and (max-width: 500px){
+    #intro h2{
+        font-size: 10vw;
+    }
 }
 
 #intro h2:first-child::first-letter{ /* H */
