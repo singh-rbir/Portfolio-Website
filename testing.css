@@ -160,7 +160,14 @@ body {
     font-size: 10rem;
     text-align: left;
     overflow: auto;
+}
 
+#about-me img{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 
