@@ -31,15 +31,17 @@
 
     <!-- ********************************* HEADER ************************************************** -->
     <div class="construction-tag text-right">
-
+        <!-- COMBAK: make a closeable slide down from the top kind of message
+    or someting discrete like that for this tag -->
     </div>
+
     <div class="header pt-3" id="header">
         <div class="container-fluid-sm">
 
             <h2 class="text-center">RAJANBIR SINGH</h2>
             <!-- <h6 class="text-right sticky-top">Website under construction</h6> -->
 
-            <div class="pb-2 text-center" id="social_links">
+            <div class="pb-2 text-center" id="social-links">
                 <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
                     <img src="images/git_logo.dms" alt="git">
                 </a>
@@ -59,28 +61,28 @@
 
     <!-- ********************************* NAVBAR ************************************************** -->
 
-    <nav class="navbar navbar-expand-sm sticky-top fade show" id="topNavBar">
+    <nav class="navbar navbar-expand-sm sticky-top fade show my-0" id="topNavBar">
         <div class="container-sm">
 
             <!-- Navbar-brand element to appear/disappear on scroll -->
             <div class="beforeScroll" id="divToShowHide">
-                <a class="navbar-brand text-primary bg-light d-inline rounded p-1 py-0 my-0" href="#header">RS</a>
+                <a class="navbar-brand text-primary bg-light d-inline rounded p-1 my-0" href="#header">RS</a>
             </div>
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
                 <i class="fas fa-bars text-primary bg-light px-2 py-1 my-0 rounded"></i>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-center my-0" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a href="#about_me" class="nav-link px-3 fade show">About</a>
+                        <a href="#about-me" class="nav-link px-3 fade show">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#experience_me" class="nav-link px-3 fade show">Experience & Projects</a>
+                        <a href="#experience-me" class="nav-link px-3 fade show">Experience & Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact_me" class="nav-link px-3 fade show">Contact</a>
+                        <a href="#contact-me" class="nav-link px-3 fade show">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="docs/raj_resume_cs.pdf" target="_blank" class="nav-link px-3 fade show">Resume
@@ -95,7 +97,7 @@
 <!-- ********************************* MAIN CONTENT ************************************************** -->
 
     <!-- ScrollSpy for the whole page on top ********************************-->
-    <div data-spy="scroll" data-target="#topNavBar" id="scroll_data">
+    <div data-spy="scroll" data-target="#topNavBar" data-offset="50" id="scroll_data">
         <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
         <div class="container-fluid-sm bg-primary" id="intro">
@@ -112,7 +114,7 @@
         </div>
 
         <!-- ABOUT ME ******************************** -->
-        <div class="container-fluid-sm" id="about_me">
+        <div class="container-fluid-sm" id="about-me">
             <div class="container">
                 <h2 class="container-titles show-on-scroll bg-light rounded mb-3">About</h2>
                 <br>
@@ -177,7 +179,7 @@
         </div>
 
         <!-- EXPERIENCE AND PROJECTS **************** -->
-        <div class="container-fluid-sm" id="experience_me">
+        <div class="container-fluid-sm" id="experience-me">
             <div class="container">
                 <h2 class="container-titles show-on-scroll bg-light rounded mb-3">Experience & Projects</h2>
                 <br>
@@ -227,7 +229,7 @@
         </div>
 
         <!-- CONTACT ******************** -->
-        <div class="container-fluid-sm" id="contact_me">
+        <div class="container-fluid-sm" id="contact-me">
             <div class="container">
                 <h2 class="container-titles show-on-scroll bg-light rounded">Contact</h2>
                 <br>
@@ -241,26 +243,26 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="social_links" class="border-right">
+                            <td id="social-links" class="border-right">
                                 <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
                                 Github <img src="images/git_logo.dms" alt="git">
                                 </a>
                             </td>
-                            <td id="social_links">
+                            <td id="social-links">
                                 <a href="mailto:singh.rbir@gmail.com?Subject=Hi%20there!%20I%20found%20your%20portfolio" class="fade show" target="_top">
                                     singh.rbir@gmail.com <img src="images/email_logo.dms" alt="em">
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td id="social_links" class="border-right">
+                            <td id="social-links" class="border-right">
                                 <a href="https://www.linkedin.com/in/singh-rbir/" class="fade show" target="_blank">
                                     LinkedIn <img src="images/linked_in_logo.png" alt="in">
                             </td>
-                            <td id="social_links">(+1) 204-955-5272 <i class="fas fa-mobile-alt"></i></td>
+                            <td id="social-links">(+1) 204-955-5272 <i class="fas fa-mobile-alt"></i></td>
                         </tr>
                         <tr>
-                            <td id="social_links" class="border-right">
+                            <td id="social-links" class="border-right">
                                 <a href="https://www.facebook.com/singh.rbir" class="fade show" target="_blank">
                                     Facebook <img src="images/fb-logo.png" alt="fb">
                                 </a>

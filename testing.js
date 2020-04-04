@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+    /* MAKES THE NAVBAR-TOGGLE ON CLICKING A LINK ***************/
+    $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    /* ***************************************************************************************** */
+
+    /* MAKES THE NAVBAR BRAND APPEAR/DISAPPEAR ON THE NAVBAR AFTER A CERTAIN SCROLL */
+
     var div = $("#divToShowHide");
 
     var pos = div.position(); // gets the vertical position
@@ -17,11 +27,18 @@ $(document).ready(function(){
         }
     });
 
+    /* ******************************************************************************************** */
+
+    // FOLLOWING CODE IS TO TRIGGER ANIMATIONS WHEN THE SPECIFIC ELEMENT BECOMES
+    // VISIBLE ON THE SCREEN ******************************
 
     var scroll = window.requestAnimationFrame ||
-            function(callback){ window.setTimeout(callback, 1000/60)};
+            function(callback){
+                window.setTimeout(callback, 1000/60)
+            };
 
-    var elementsToShow = document.querySelectorAll('.show-on-scroll'); // gets all the elements with that class into an array
+    // gets all the elements with that class into an array
+    var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
     function loop() {
         elementsToShow.forEach(function (element) {
@@ -32,7 +49,6 @@ $(document).ready(function(){
 
         scroll(loop);
     }
-        console.log("working1");
     loop();
 
     function isElementInViewport(el) {
