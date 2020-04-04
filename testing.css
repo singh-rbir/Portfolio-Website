@@ -77,7 +77,7 @@ body {
 
 /* ***********************BODY STARTS HERE************************************** */
 
-/* INTRO SECTION ********************************* */
+/* ***********INTRO SECTION ***************** */
 #intro{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -97,7 +97,7 @@ body {
 
 #intro h2:first-child::first-letter{ /* H */
     font-size: 2em;
-    font-family: cursive;
+    font-family: monospace;
 }
 
 #intro-top{
@@ -127,7 +127,7 @@ body {
 /* SETTINGS COMMON TO ALL SECTIONS ******************************** */
 #about_me h2:first-child::first-letter, #experience_me h2:first-child::first-letter, #contact_me h2:first-child::first-letter{
     font-size: 3rem;
-    font-family: cursive;
+    font-family: monospace;
 }
 
 #about_me h2:first-child, #experience_me h2:first-child, #contact_me h2:first-child{
@@ -137,23 +137,43 @@ body {
     padding-right: 0.5rem;
 }
 
-/* ABOUT SECTION *************************** */
-
+/* *************ABOUT SECTION ***************** */
 
 #about_me{
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #FC7307;
-    height: 90vh;
     overflow: auto;
 }
 
-/* EXPERIENCE SECTION *************************** */
+#terminal-layout{
+    font-family: monospace;
+}
+
+#about_me h3{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 10em;
+    position: relative;
+}
+
+#about_me #about-jumbo{
+    opacity: 0.7;
+    color: #341C09;
+}
+
+
+
+/* ************EXPERIENCE SECTION ****************** */
 #experience_me{
     padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #D4E4F7;
     overflow: auto;
+}
+
+#experience_me h3{
+
 }
 
 #experience img{
@@ -162,7 +182,7 @@ body {
     width: auto;
 }
 
-/* CONTACT SECTION ****************************** */
+/* **************CONTACT SECTION ******************** */
 
 #contact_me{
     padding-top: 2rem;
