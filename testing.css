@@ -153,8 +153,8 @@ body {
 #about_me h3{
     font-family: monospace;
     font-weight: bold;
-    font-size: 10em;
-    position: relative;
+    font-size: 7rem;
+    text-align: left;
 }
 
 #about_me #about-jumbo{
