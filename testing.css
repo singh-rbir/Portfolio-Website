@@ -15,7 +15,7 @@ body {
     animation: fade-effect 0.75s;
 }
 
-#social_links img{
+.header #social_links img{
     height: 1.5rem;
     width: 1.5rem;
     animation: fade-effect 0.75s;
@@ -87,12 +87,8 @@ body {
 }
 
 #intro h2{
-    font: 5em bold;
+    font: 4em bold;
     font-family: monospace;
-
-}
-
-#intro h2:first-child{ /* HEY */
 }
 
 #intro h2:first-child::first-letter{ /* H */
@@ -100,11 +96,11 @@ body {
     font-family: monospace;
 }
 
-#intro-top{
+#intro-top{ /* HEY */
     animation: fade-effect 2s;
 }
 
-#intro-bottom{
+#intro-bottom{ /* This is Raj */
     display: inline-block;
     transition-property: background-color;
     transition-duration: 2s;
@@ -153,15 +149,11 @@ body {
 #about_me h3{
     font-family: monospace;
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 10rem;
     text-align: left;
-}
+    overflow: auto;
 
-#about_me #about-jumbo{
-    opacity: 0.7;
-    color: #341C09;
 }
-
 
 
 /* ************EXPERIENCE SECTION ****************** */
@@ -207,6 +199,15 @@ body {
 
 #contact_me #social_links a{
     text-decoration: none;
+}
+
+#contact_me #social_links img{
+    height: 1rem;
+    width: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    animation: fade-effect 0.75s;
+    /* animation-delay: 0.5s; */
 }
 
 
