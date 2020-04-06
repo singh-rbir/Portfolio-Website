@@ -16,13 +16,13 @@ body {
     font-family: Helvetica;
     letter-spacing: .15em; /* Adjust as needed */
     color: #341C09;
-    animation: fade-effect 0.75s;
+    animation: fade-effect-down 0.75s;
 }
 
 .header #social-links img{
     height: 1.5rem;
     width: 1.5rem;
-    animation: fade-effect 0.75s;
+    animation: fade-effect-down 0.75s;
     /* animation-delay: 0.5s; */
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .navbar ul{
-    animation: fade-effect 0.75s;
+    animation: fade-effect-down 0.75s;
     /* animation-delay: 1s; */
 }
 
@@ -78,7 +78,7 @@ body {
 
 .afterScroll{
     display: inline-block;
-    animation: fade-effect 1s;
+    animation: fade-effect-down 1s;
 }
 
 /* ***********************BODY STARTS HERE************************************** */
@@ -87,14 +87,17 @@ body {
 #intro{
     padding-top: 4rem;
     padding-bottom: 4rem;
-    /* background-color: #236AB9; */
     height: 85vh;
     overflow: auto;
+    background-color: #007bff;
+    /* background-image: url('images/intro-bg.jpg'); */
+    /* background-image: linear-gradient(#007bff, #fd7e14); /* blue to orange */ */
 }
 
 #intro h2{
     font: 5em bold;
     font-family: monospace;
+    animation: fade-effect-down 2s;
 }
 
 @media only screen and (max-width: 500px){
@@ -113,20 +116,20 @@ body {
 }
 
 #intro-top{ /* HEY */
-    animation: fade-effect 2s;
+
 }
 
-#intro h3{
+#intro h3{ /* This is Raj */
     font: 3em bold;
     font-family: monospace;
+    animation: fade-effect-up 2s;
+    display: inline-block;
+    transition-property: background-color;
+    background-color: white;
 }
 
 #intro-bottom{ /* This is Raj */
-    display: inline-block;
-    transition-property: background-color;
-    transition-duration: 2s;
-    background-color: white;
-    transition-timing-function: ease-in;
+
 }
 
 #scroll-down-icon{
@@ -161,6 +164,12 @@ body {
     padding-bottom: 4rem;
     background-color: #FC7307;
     overflow: auto;
+    /* background-image: linear-gradient(#fd7e14, #D4E4F7); */
+}
+
+#about-me .container:first-of-type{
+    /* background-color: #FC7307; */
+    background-image: linear-gradient(#fd7e14, #D4E4F7);
 }
 
 #terminal-layout{
@@ -190,10 +199,12 @@ body {
     padding-bottom: 4rem;
     background-color: #D4E4F7;
     overflow: auto;
+    /* background-image: linear-gradient(#D4E4F7, #B85B14); */
 }
 
-#experience-me h3{
-
+#experience-me .container:first-of-type{
+    /* background-color: #D4E4F7; */
+    background-image: linear-gradient(#D4E4F7, #B85B14);
 }
 
 #experience img{
@@ -206,11 +217,16 @@ body {
 
 #contact-me{
     padding-top: 2rem;
-    background-color: #B85B14;
+    background-color: #B85B14; /* light brown
+    /* background-image: linear-gradient(#B85B14, #341C09); */
 }
 
-#contact-me .container{
+#contact-me .container:first-child{
     overflow: hidden;
+    /* background-color: #B85B14; */
+    background-image: linear-gradient(#B85B14, #341C09);
+    /* background-image: linear-gradient(#B85B14, #341C09); */
+
 }
 
 #contact-me h2{
@@ -234,7 +250,7 @@ body {
     width: 1rem;
     margin-top: auto;
     margin-bottom: auto;
-    animation: fade-effect 0.75s;
+    animation: fade-effect-down 0.75s;
     /* animation-delay: 0.5s; */
 }
 
@@ -256,8 +272,15 @@ body {
 
 /* ANIMATIONS ***********************************************************************************/
 
-@keyframes fade-effect {
+@keyframes fade-effect-down {
     from {opacity: 0; transform: translateY(-5em) rotateX(-90deg);
+                transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+                opacity 2.0s 0.25s ease-in;}
+    to {opacity: 1;}
+}
+
+@keyframes fade-effect-up {
+    from {opacity: 0; transform: translateY(5em) rotateX(-90deg);
                 transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
                 opacity 2.0s 0.25s ease-in;}
     to {opacity: 1;}
@@ -273,18 +296,18 @@ body {
     100% {top: 0.2em;}
 }
 /* Keep those elements hidden at first. Each type of element has a little different animation*/
-.container-headers{
+.container-headers{ /* this animation is only used in the header in the intro section of page */
     opacity: 0;
     transform: translateY(4em) rotateY(-10deg);
-    transition: transform 3.5s 0.25s cubic-bezier(0.1, 1, 0.3, 1),
-                opacity 2.0s 0.25s ease-out;
+    transition: transform 2.5s 1.5s cubic-bezier(0.1, 1, 0.3, 1),
+                opacity 1.0s 0.25s ease-out;
     will-change: transform, opacity;
 }
 
 .container-titles{
     opacity: 0;
     transform: translateY(-5em) rotateZ(-5deg);
-    transition: transform 2.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1),
                 opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity;
 }
@@ -292,7 +315,7 @@ body {
 .container-bodys{
     opacity: 0;
     transform: translateY(5em) rotateZ(-10deg);
-    transition: transform 2.5s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1),
                 opacity 0.3s 0.25s ease-out;
     will-change: transform, opacity;
 }
@@ -305,7 +328,7 @@ body {
 
 .container-titles.is-visible{
     opacity: 1;
-    transform: rotateX(-2deg);
+    transform: rotateZ(0deg);
 }
 
 .container-bodys.is-visible{
