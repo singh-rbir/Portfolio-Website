@@ -76,13 +76,13 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center">
                     <li class="nav-item">
-                        <a href="#about-me" class="nav-link px-3 fade show">About</a>
+                        <a href="#about-outer" class="nav-link px-3 fade show">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#experience-me" class="nav-link px-3 fade show">Experience & Projects</a>
+                        <a href="#experience-outer" class="nav-link px-3 fade show">Experience & Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact-me" class="nav-link px-3 fade show">Contact</a>
+                        <a href="#contact-outer" class="nav-link px-3 fade show">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="docs/raj_resume_cs.pdf" target="_blank" class="nav-link px-3 fade show">Resume
@@ -97,7 +97,7 @@
 <!-- ********************************* MAIN CONTENT ************************************************** -->
 
     <!-- ScrollSpy for the whole page on top ********************************-->
-    <div data-spy="scroll" data-target="#topNavBar" data-offset="50" id="scroll_data">
+    <div data-spy="scroll" data-target="#topNavBar" data-offset="0" id="scroll_data">
         <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
         <div class="container-fluid-sm" id="intro">
@@ -112,60 +112,60 @@
 
         </div>
 
-        <!-- ABOUT ME ******************************** -->
-        <div class="container-fluid-sm" id="about-me">
-            <div class="container shadow-lg rounded p-3">
-                <h2 class="container-titles show-on-scroll bg-light shadow-lg rounded mb-3">About</h2>
-                <br>
+        <!-- ABOUT ME **************************************** -->
+        <div class="container-fluid-sm" id="about-outer">
+            <div class="container shadow-lg text-center justify-content-center rounded p-3">
+                <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">About</h4>
 
-                <div class="row justify-content-around">
+                <hr>
 
-                    <div class="col-sm-5 container-bodys show-on-scroll bg-light text-dark p-3 mb-2 shadow-lg  rounded" id="about-jumbo">
+                <div class="row justify-content-around text-left">
+                    <div class="col-sm-5 container-bodys show-on-scroll text-dark p-3 mb-2 shadow-lg rounded" id="about-jumbo">
                         <!-- <h3>What About Me?</h3> -->
-                        <img src="images/about-me-img.png" class="img-fluid shadow-lg" alt="about-me-img">
+                        <img src="images/about-outer-img.png" class="img-fluid shadow-lg" alt="about-outer-img">
                     </div>
 
                     <div class="col-sm-6 container-bodys show-on-scroll bg-dark text-light shadow-lg p-3 mb-2 rounded" id="terminal-layout">
 
-                        ~ <code>getEducation()</code>
+                        ~ <code>[education]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => York University, Toronto
                         </div></br>
 
-                        ~ <code>getProgram()</code>
+                        ~ <code>[program]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => B.Sc. Honors. Computer Science
                         </div></br>
 
-                        ~ <code>getGraduationDate()</code>
+                        ~ <code>[graduationDate]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => 2021
                         </div></br>
 
-                        ~ <code>getInterests()</code>
+                        ~ <code>[interests]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => ['Coding', 'Gym', 'Chillstep music', 'Bitcoin', 'Video Games', 'Cat videos on Youtube']
                         </div></br>
 
-                        ~ <code>getLatestProject()</code>
+                        ~ <code>[latestProject]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => Voice Alarm (AndroidApp)
                         </div></br>
 
-                        ~ <code>getResume()</code>
+                        ~ <code>[resume]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => <a href="docs/raj_resume_cs.pdf" target="_blank" class="link-primary">raj_resume.pdf
                             <i class="fas fa-external-link-alt fa-xs"></i></a>
                         </div></br>
 
-                        ~ <code>getEmail()</code>
+                        ~ <code>[email]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => <a href="mailto:singh.rbir@gmail.com?Subject=Hi%20there!%20I%20found%20your%20portfolio" target="_top">
                                 singh.rbir@gmail.com
                             </a>
                         </div></br>
 
-                        ~ <code>getPreferredName()</code>
+                        ~ <code>[preferredName]</code>
                         <div class="ml-3 shadow-lg" id="output">
                             => 'Raj'
                         </div></br>
@@ -177,21 +177,22 @@
 
         </div>
 
-        <!-- EXPERIENCE AND PROJECTS **************** -->
-        <div class="container-fluid-sm" id="experience-me">
-            <div class="container p-3 shadow-lg rounded">
-                <h2 class="container-titles show-on-scroll bg-light shadow-lg rounded mb-3">Experience & Projects</h2>
-                
+        <!-- EXPERIENCE AND PROJECTS ************************* -->
+        <div class="container-fluid-sm" id="experience-outer">
+            <div class="container p-3 shadow-lg text-center rounded">
+                <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Experience & Projects</h4>
+
+                <hr>
 
                 <img src="images/experience-banner-img.png" class="img-fluid d-block mx-auto pb-3" id="experience-banner-img" alt="experience-header-img">
 
-                <div class="container-fluid-xl">
+                <div class="container-fluid-xl text-left">
                     <div class="card-deck" id="experience">
                         <!-- voice alarm app -->
                         <div class="card container-bodys show-on-scroll">
                             <img class="card-img-top" src="images/abstract.jpg" alt="abstract">
                             <div class="card-body">
-                                <h3 class="card-title shadow-sm text-center border-bottom">Voice Alarm - <i class="fab fa-android"></i> App</h3>
+                                <h5 class="card-title shadow-sm text-center border-bottom">Voice Alarm - <i class="fab fa-android"></i> App</h5>
                                 <ul class="card-text">
                                     <li>An android app that uses voice recognition to wake you up in the morning</li>
                                     <li>Once the alarm goes off, it can only be dimissed by reading the text shown on the screen, into phone's mic</li>
@@ -203,7 +204,7 @@
                         <div class="card container-bodys show-on-scroll">
                             <img class="card-img-top" src="images/peer_mentor.png" alt="peer mentoring">
                             <div class="card-body">
-                                <h3 class="card-title shadow-sm text-center border-bottom">Student Tutor in Webdesign Course</h3>
+                                <h5 class="card-title shadow-sm text-center border-bottom">Peer Tutor in Webdesign Course</h5>
                                 <ul class="card-text">
                                     <li>Tutored/Mentored students in EECS1012 at York Univ.</li>
                                     <li>Provided students with help in JS (JQuery), HTML, CSS, JSON</li>
@@ -214,9 +215,9 @@
                         </div>
                         <!-- Codify - Student Club member experince -->
                         <div class="card container-bodys show-on-scroll">
-                            <img class="card-img-top" src="images/abstract_2.jpg" alt="abstract_3">
+                            <img class="card-img-top" src="images/codefi_club_image.png" alt="abstract_3">
                             <div class="card-body">
-                                <h3 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h3>
+                                <h5 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h5>
                                 <ul class="card-text">
                                     <li>Occasionally teaching basic Web Development skills to 1st year students</li>
                                     <li>Maintaining a fun and learning environment for beginners</li>
@@ -230,13 +231,65 @@
 
         </div>
 
-        <!-- CONTACT ******************** -->
-        <div class="container-fluid-sm" id="contact-me">
-            <div class="container shadow-lg rounded p-3">
-                <h2 class="container-titles show-on-scroll bg-light shadow-lg rounded">Contact</h2>
-                <br>
+        <!-- EDUCATION *********************************************** -->
 
-                <table class="table text-right bg-light w-auto table-borderless shadow-lg rounded container-bodys show-on-scroll">
+        <div class="container-fluid-sm" id="education-outer">
+            <div class="container text-center shadow-lg rounded p-3">
+                <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Education</h4>
+
+                <hr>
+
+                <div class="row justify-content-around text-left">
+                    <div class="col-sm-8 container-bodys show-on-scroll text-dark shadow-lg p-4 mb-2 rounded" id="education-layout">
+
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="images/yorku_logo.png" class="img-fluid" id="yorku-logo-img" alt="yorku-logo-img">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="h5">York University, Toronto <br>Bsc. Honors, Computer Science</div>
+
+                                <br>
+                                <div class="h5 font-weight-normal" id="coursework">
+                                    Coursework:
+                                    <ul class="font-weight-light">
+                                        <li>Web Development in Computer Science</li>
+                                        <li>Fundamentals of Data Structures</li>
+                                        <li>Advanced Object Oriented Programming</li>
+                                        <li>Discrete Mathematics, Theory of Computation</li>
+                                        <li>Assembly/Logic Programming</li>
+                                        <li>Research Directions in Computing</li>
+                                        <li>Software Tools, Mobile Computing</li>
+                                        <li>Algorithms, design and analysis</li>
+                                        <li>Software design (Project-heavy course)</li>
+                                        <li>Database Systems</li>
+                                        <li>User Interfaces</li>
+                                        <li>... more to come</li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CONTACT ******************** -->
+
+        <div class="container-fluid-sm" id="contact-outer">
+            <div class="container text-center shadow-lg rounded p-3">
+                <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Contact</h4>
+
+                <hr>
+
+                <table class="table text-right w-auto table-borderless shadow-lg rounded container-bodys show-on-scroll">
                     <thead>
                         <tr>
                             <th class="border-right">Social Media</th>
@@ -276,11 +329,24 @@
             </div>
 
             <div class="container py-1">
-                <p class="text-light text-right">&copy Copyright 2020</p>
+                <p class="text-disabled text-right">&copy 2020 Rajanbir Singh</p>
             </div>
         </div>
     </div>
     <!-- Scrollspy ends here ******************************** -->
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ************************************************************************************************** -->
     <!-- *******Display made invisible for the following div, as it's only for testing purposes **************-->
     <div class="container-fluid-sm" id="inner_container">
