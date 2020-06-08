@@ -7,7 +7,6 @@
     <title>Voice Alarm - Privacy Policy</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="privacy_policy.css" type="text/css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -59,11 +58,23 @@
                 with any marketing companies/agencies, or any other outside companies of any sort. As stated already,
             the only processing/storing done with the data is for the purposes of accomplishing the app's task of dismissing the alarm. </p>
             </ul>
+            <p class="text-right text-muted" id="date"></p>
         </div>
     </div>
-    <div class="container-sm bg-dark text-center p-3">
-        <a href="index.html">Navigate to developer's website</a>
-        <p class="text-muted m-4">Rajanbir Singh. &copy Voice Alarm. All rights reserved.</p>
+
+    <div class="container-sm bg-dark text-center py-3">
+        <a href="index.html" class="py-3">Navigate to developer's website</a>
+        <p class="text-muted py-3">Rajanbir Singh. Voice Alarm. All rights reserved.</p>
     </div>
+
+    <script type="text/javascript">
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = "Last updated: " + y + "/" + m + "/" + d;
+
+    </script>
+
 </body>
 </html>
