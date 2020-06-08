@@ -8,12 +8,18 @@ body {
     margin-right: 0;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .header{
     background-color: #D4E4F7;
 }
 
 .header h2 {
-    font-family: Helvetica;
+    font-family: Verdana, sans-serif, helvetica;
+    font-weight: lighter;
+    font-size: 1.5rem;
     letter-spacing: .15em; /* Adjust as needed */
     color: #341C09;
     animation: fade-effect-down 0.75s;
