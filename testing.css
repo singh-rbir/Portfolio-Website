@@ -164,27 +164,27 @@ blockquote{
 
 .quote-box{
     overflow: hidden;
-    margin-top: -50px;
-    padding-top: -100px;
-    border-radius: 17px;
+    /* margin-top: -50px; */
+    /* padding-top: -100px; */
+    border-radius: 0.5rem;
     background-color: #4ADFCC;
-    margin-top: 25px;
-    color:white;
-    width: 325px;
+    /* margin-top: 25px; */
+    color: white;
+    width: 50%;
     box-shadow: 2px 2px 2px 2px #E0E0E0;
 }
 
 .quotation-mark{
-    margin-top: -10px;
+    /* margin-top: 0.5rem; */
     font-weight: bold;
-    font-size:100px;
-    color:white;
+    font-size: 6.5rem;
+    color: white;
     font-family: "Times New Roman", Georgia, Serif;
 }
 
 .quote-text{
-    font-size: 19px;
-    margin-top: -65px;
+    font-size: 1.2rem;
+    margin-top: -3.5rem;
 }
 
 /* Blockquote end *************** */
