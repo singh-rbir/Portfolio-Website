@@ -99,7 +99,6 @@ a:hover{
     background-image: url('images/abstract_intro_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-image: linear-gradient(#007bff, #fd7e14); /* blue to orange */ */
 }
 
 #intro h2{
@@ -329,8 +328,11 @@ blockquote{
 
 #contact-outer{
     padding-top: 2rem;
-    background-color: #341C09; /* light brown */
+    /* background-color: #341C09; /* light brown */ */
     font-family: monospace;
+    background-image: url('images/abstract_intro_bg.jpg');
+    
+    background-position: bottom;
     /* background-image: linear-gradient(#B85B14, #341C09); */
 }
 
