@@ -152,6 +152,43 @@ a:hover{
     animation-delay: 4s;
 }
 
+/* Blockquote code ***********************/
+
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.quote-box{
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: #4ADFCC;
+    margin-top: 25px;
+    color:white;
+    width: 325px;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+}
+
+.quotation-mark{
+    margin-top: -10px;
+    font-weight: bold;
+    font-size:100px;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.quote-text{
+    font-size: 19px;
+    margin-top: -65px;
+}
+
+/* Blockquote end *************** */
+
 /* SETTINGS COMMON TO ALL SECTIONS ******************************** */
 #about-outer h4:first-child, #experience-outer h4:first-child, #education-outer h4:first-child, #contact-outer h4:first-child{
     border-top: 0.1rem solid #341C09;

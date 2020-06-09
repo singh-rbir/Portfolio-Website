@@ -82,6 +82,9 @@
                         <a href="#experience-outer" class="nav-link px-3 fade show">Experience & Projects</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#education-outer" class="nav-link px-3 fade show">Education</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#contact-outer" class="nav-link px-3 fade show">Contact</a>
                     </li>
                     <li class="nav-item">
@@ -100,19 +103,45 @@
     <div data-spy="scroll" data-target="#topNavBar" data-offset="0" id="scroll_data">
         <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
-        <div class="container-fluid-sm" id="intro">
-            <div class="container">
-                <h2 class="text-light" id="intro-top">Hey!</h2>
-                <h3 class="shadow-lg rounded p-1 bg-light" id="intro-bottom">This is Raj.</h3>
-                <div class="container text-center">
-                    <i class="fas fa-arrow-alt-circle-down" id="scroll-down-icon"></i>
+        <!-- INTRO ********************************************** -->
+        <div class="container-fluid-sm text-center" id="intro">
+            <div class="row justify-content-around">
+                <!-- Intro text -->
+                <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 shadow-lg rounded">
+                    <h2 class="text-light text-center p-1" id="intro-top">Hey!</h2>
+                    <h3 class="shadow text-center rounded bg-light p-1" id="intro-bottom">This is Raj.</h3>
                 </div>
+                <!-- Quotation -->
+                <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 rounded">
+
+                    <blockquote class="quote-box mx-auto">
+                      <p class="quotation-mark">
+                        “
+                      </p>
+                      <p class="quote-text px-2">
+                        I know that I am intelligent, because I know that I know nothing.
+                      </p>
+                      <hr>
+                      <div class="blog-post-actions">
+                        <p class="blog-post-bottom text-left px-2">
+                            Socrates
+                        </p>
+                      </div>
+                    </blockquote>
+
+                </div>
+            </div>
+            <div class="container text-center">
+                <i class="fas fa-arrow-alt-circle-down" id="scroll-down-icon"></i>
+            </div>
+            <div class="container">
+
 
             </div>
 
         </div>
 
-        <!-- ABOUT ME **************************************** -->
+        <!-- ABOUT ME ********************************************* -->
         <div class="container-fluid-sm" id="about-outer">
             <div class="container shadow-lg text-center justify-content-center rounded p-3">
                 <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">About</h4>
@@ -177,7 +206,8 @@
 
         </div>
 
-        <!-- EXPERIENCE AND PROJECTS ************************* -->
+        <!-- EXPERIENCE AND PROJECTS ************************************** -->
+
         <div class="container-fluid-sm" id="experience-outer">
             <div class="container p-3 shadow-lg text-center rounded">
                 <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Experience & Projects</h4>
