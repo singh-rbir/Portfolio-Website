@@ -96,9 +96,10 @@ a:hover{
     height: 85vh;
     overflow: auto;
     /* background-color: #007bff; */
-    background-image: url('images/abstract_intro_bg.jpg');
+    background-image: url('images/intro-bg-image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
 #intro h2{
@@ -331,7 +332,7 @@ blockquote{
     /* background-color: #341C09; /* light brown */ */
     font-family: monospace;
     background-image: url('images/abstract_intro_bg.jpg');
-    
+
     background-position: bottom;
     /* background-image: linear-gradient(#B85B14, #341C09); */
 }
