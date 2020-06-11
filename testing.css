@@ -150,6 +150,10 @@ a:hover{
     animation-delay: 4s;
 }
 
+#intro-text{
+    font-family: helvetica, sans-serif;
+}
+
 /* Blockquote code ***********************/
 
 blockquote{
