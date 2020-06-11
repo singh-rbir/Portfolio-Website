@@ -29,7 +29,6 @@ a:hover{
     height: 1.5rem;
     width: 1.5rem;
     animation: fade-effect-down 0.75s;
-    /* animation-delay: 0.5s; */
 }
 
 #social-links a{
@@ -50,9 +49,9 @@ a:hover{
 /* ******************* NAVBAR SECTION **************************************/
 
 .navbar{
-    background-color: #341C09;
+    /*background-color: #341C09;*/
     border-bottom: 0.2rem solid #236AB9;
-    opacity: 0.94;
+    opacity: 0.96;
 }
 
 .navbar ul{
