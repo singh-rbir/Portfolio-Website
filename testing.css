@@ -143,7 +143,6 @@ a:hover{
     position: relative;
     font-size: 2rem;
     border-radius: 100%;
-    color: #341C09;
     opacity: 0; /* initally the element will be invisible before the animation starts */
     animation: scroll-down-effect 2s;
     animation-iteration-count: infinite;
@@ -183,7 +182,7 @@ blockquote{
 
 .quote-text{
     font-size: 1rem;
-    margin-top: -3.5rem;
+    margin-top: -4rem;
 }
 
 /* Blockquote end *************** */
@@ -382,6 +381,7 @@ blockquote{
 
 
 
+
 /* display set to none because that are is just for reference */
 #inner_container{
     background-color: #FB9118;
@@ -405,8 +405,8 @@ blockquote{
 }
 
 @keyframes scroll-down-effect {
-    0% {opacity: 0.4; top: 0em;}
-    100% {opacity: 1; top: 4em; background-color: white;}
+    0% {opacity: 0.6; top: 0em;}
+    100% {opacity: 1; top: 3em; background-color: white;}
 }
 
 @keyframes hovering-effect {
