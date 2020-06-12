@@ -293,11 +293,16 @@ blockquote{
 
 }
 
-#experience img{ /* card pics */
+#google-play-img{
+    height: 2rem;
+}
+
+#experience img.card-img-top{ /* card pics */
     justify-content: center;
     height: 15rem;
     width: auto;
 }
+
 
 /* **************EDUCATION SECTION ******************** */
 
