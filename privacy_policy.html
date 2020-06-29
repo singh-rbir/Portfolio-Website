@@ -24,36 +24,36 @@
 </head>
 <body class="bg-light">
     <div class="container-sm bg-primary p-3" style="min-height: 100vh;">
-        <h2 class="text-center text-light">Voice Alarm's Privacy Policy</h2>
+        <h1 class="text-center display-4 text-light">Voice Alarm's Privacy Policy</h2>
         <hr/>
-        <div class="bg-light p-4 rounded">
-            <p class="text-secondary">This is the document regarding the use of sensitive user data by Voice Alarm Android App.
+        <div class="bg-light p-4 m-2 my-4 rounded">
+            <p class="text-secondary my-3">This is the document regarding the use of sensitive user data by Voice Alarm Android App.
                 Google Play requires that the privacy policy must, together with any in-app disclosures, comprehensively disclose how the app
                 collects, uses, and shares user data, including the types of parties with whom it’s shared.</p>
-            <p class="text-primary">Voice Alarm is an app that makes use of speech-recognition to dismiss the alarm when it goes off.
+            <p class="text-primary my-4 lead">Voice Alarm is an app that makes use of speech-recognition to dismiss the alarm when it goes off.
                 The speech recognized (using Google's SpeechRecognizer Api) is processed and matched against the words that
                 user is required to speak. If the words match, the alarm is turned off. </p>
             <ul style="list-style-type: circle;">
-                <li class="text-info">What type of sensitive user data does the app collect?</li>
+                <li class="h3 text-info text-weight">What type of sensitive user data does the app collect?</li>
                 <p>The app uses speech recognition to record the user's voice, and interpet the words spoken by the user.
                     But the app is <b>not</b> always in this state of collecting user's speech. The app only does this when
                     an alarm (set by the user to go off at a particular time) goes off, and requires the user to speak into the device's mic by
                     pressing the "speak" button. The app only collects this data for that short period of time (usually no more than 10s). The speech recognition
                     process is carried out with the use of Google's SpeechRecognizer Api, only for that small period of time. </p>
-                <li class="text-info">What type of data processing is done on the collected user data (speech)?</li>
+                <li class="h3 text-info">What type of data processing is done on the collected user data (speech)?</li>
                 <p>The speech collected by the Google Api is processed on the basis of confidence scores (in-built feature of the Api),
                     to determine the most precisely possible words spoken by the user. Then, that particular set of words is matched against
                     the sentence/words that appear on the screen (which are randomly chosen from a set array of sentences). If the words match exactly,
                     the alarm is turned off. As soon as the alarm is turned off, the user's spoken words (which were stored in a temporary variable) are destroyed,
                     and so is the activity (the page of the app) that shows the alarm. </p>
                 <p>Apart than this, there is no other processing of any sort done on the user's collected data.</p>
-                <li class="text-info">For how long is the user's data collected/stored/proccessed by the app?</li>
+                <li class="h3 text-info">For how long is the user's data collected/stored/proccessed by the app?</li>
                 <p>As stated above, the data (speech, to be precise) is stored temporarily (inside the app/activity) for only as long as
                     the user is inside that particular page of the app (which shows the alarm going off). As soon as the user exits the app,
                     or his/her words are found to match with the required string, the collected user data is destroyed.</p>
                 <p>As such, the recorded user data isn't stored in there permanently. The user does't need to worry about their privacy
                     (or any such sensitive user data for this matter), being invaded by Voice Alarm. </p>
-                <li class="text-info">Is the collected user data shared with anyone? </li>
+                <li class="h3 text-info">Is the collected user data shared with anyone? </li>
                 <p>The user data is not shared with anyone (no third-party). The user need not worry about their data being shared
                 with any marketing companies/agencies, or any other outside companies of any sort. As stated already,
             the only processing/storing done with the data is for the purposes of accomplishing the app's task of dismissing the alarm. </p>
