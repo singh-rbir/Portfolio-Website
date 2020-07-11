@@ -277,13 +277,13 @@ blockquote{
     list-style-type: circle;
 }
 
-#experince-outer .card-text{
+#experience-outer .card-text{
     text-align: left;
 }
 
-#experience-outer .card:hover{
+/* #experience-outer .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 @media only screen and (max-width: 700px) { /* small screens, landscape view */
     #experience-banner-img{
@@ -309,10 +309,26 @@ blockquote{
     height: 2rem;
 }
 
+#experience .card:first-child .card-img-top{
+    width: auto;
+}
+
 #experience img.card-img-top{ /* card pics */
     justify-content: center;
     height: 15rem;
-    width: auto;
+}
+
+.card-columns {
+    /* the following 2 lines are causing the outer-container height to increase unwantedly*/
+    /* display: inline-block; */
+    /* -webkit-column-break-inside: avoid; */
+
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
 }
 
 
