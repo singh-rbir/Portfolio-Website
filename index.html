@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rajanbir Singh</title>
 
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
@@ -110,7 +110,7 @@
             <div class="container-fluid-sm text-center" id="intro">
                 <div class="row justify-content-around">
                     <!-- Intro text -->
-                    <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 shadow-lg rounded">
+                    <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 rounded">
                         <h2 class="text-light text-center p-1" id="intro-top">Hey!</h2>
                         <h3 class="shadow text-center rounded bg-light p-1" id="intro-bottom">I'm Raj.</h3>
                     </div>
@@ -145,7 +145,7 @@
             <!-- ABOUT ME ********************************************* -->
             <div class="container-fluid-sm" id="about-outer">
                 <div class="container shadow-lg text-center justify-content-center rounded p-3">
-                    <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">About</h4>
+                    <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded">About</h4>
 
                     <hr>
 
@@ -212,7 +212,7 @@
 
                 <div class="container-fluid-sm" id="experience-outer">
                     <div class="container p-3 shadow-lg text-center rounded">
-                        <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Experience & Projects</h4>
+                        <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded">Experience & Projects</h4>
 
                         <hr>
 
@@ -266,162 +266,177 @@
                                     </div>
 
                                     <div class="card-body">
-                                        <h5 class="card-title shadow-sm text-center border-bottom">Voice Alarm - <i class="fab fa-android"></i> App</h5>
+                                        <h5 class="card-title shadow-sm text-center border-bottom"><i class="fab fa-android"></i> Voice Alarm</h5>
 
-                                        <a class="card-subtitle text-center d-block" href="https://github.com/singh-rbir/Voice-Alarm-AndroidApp" target="_blank"><i class="fab fa-github"></i> Github</a>
-                                        <ul class="card-text">
-                                            <li>An android app that uses voice recognition to wake you up</li>
-                                            <li>Once the alarm goes off, it can only be dimissed by reading the text shown on the screen, into phone's mic</li>
-                                            <li>This engages the groggy user's mind to put some effort into waking up</li>
+                                        <!-- <a class="card-subtitle text-center d-block" href="https://github.com/singh-rbir/Voice-Alarm-AndroidApp" target="_blank"><i class="fab fa-github"></i> Github</a> -->
+                                        <ul class="card-text font-weight-light">
+                                            <li class="py-1">An android app that uses <b>speech recognition</b> to wake you up</li>
+                                            <li class="py-1">The alarm is dimissed by reading the text shown on the screen, into phone's mic</li>
+                                            <li class="py-1">This engages the groggy user to put some effort into waking up</li>
                                         </ul>
 
                                         <!-- Google play store link -->
                                         <a href="https://play.google.com/store/apps/details?id=my.app.rajanbirsingh.voicealarm" class="card-link" target="_blank"><img src="images/google-play-image.png" class="img-fluid" id="google-play-img"></a>
-
-                                        <a class="card-link" href="privacy_policy.html" target="_blank">Privacy Policy <i class="fas fa-file-contract"></i></a>
-
+                                        
+                                        <a class="btn btn-primary py-1" href="https://github.com/singh-rbir/Voice-Alarm-AndroidApp" target="_blank"><i class="fab fa-github fa-lg"></i> Github</a>                                  
+                                        
+                                    </div>
+                                    <div class="card-footer text-right py-0">
+                                        <small><u><a href="privacy_policy.html" class="d-block text-right text-muted" target="_blank"><i class="fas fa-file-contract p-1"></i>Privacy Policy</a></u></small>
                                     </div>
 
                                 </div>
 
-                                    <!-- peer mentor experience -->
-                                    <div class="card container-bodys show-on-scroll">
-                                        <img class="card-img-top" src="images/peer-mentor.png" alt="peer mentoring">
-                                        <div class="card-body">
-                                            <h5 class="card-title shadow-sm text-center border-bottom">Peer Tutor in Webdesign Course</h5>
-                                            <ul class="card-text">
-                                                <li>Tutored/Mentored students in EECS1012 at York Univ.</li>
-                                                <li>Provided students with help in JS (JQuery), HTML, CSS, JSON</li>
-                                                <li>Occasionally directed lab materials</li>
-                                                <li>Submitted student evaluations to the Professor for EECS1012</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- Codify - Student Club member experince -->
-                                    <div class="card container-bodys show-on-scroll">
-                                        <img class="card-img-top py-4" src="images/codefi-club-image.png" alt="abstract_3">
-                                        <div class="card-body">
-                                            <h5 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h5>
-                                            <ul class="card-text">
-                                                <li>Occasionally teaching basic Web Development skills to 1st year students</li>
-                                                <li>Maintaining a fun and learning environment for beginners</li>
-                                                <li>General club duties as required </li>
-                                            </ul>
-                                        </div>
+                                <!-- peer mentor experience -->
+                                <div class="card container-bodys show-on-scroll">
+                                    <img class="card-img-top" src="images/peer-mentor.png" alt="peer mentoring">
+                                    <div class="card-body">
+                                        <h5 class="card-title shadow-sm text-center border-bottom">Peer Tutor in Webdesign Course</h5>
+                                        <ul class="card-text font-weight-light">
+                                            <li class="py-1">Tutored/Mentored students in EECS1012 at York Univ.</li>
+                                            <li class="py-1">Provided students with help in JS (JQuery), HTML, CSS, JSON</li>
+                                            <li class="py-1">Occasionally directed lab materials</li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                    </div>
-
-                    <!-- EDUCATION *********************************************** -->
-
-                    <div class="container-fluid-sm" id="education-outer">
-                        <div class="container text-center shadow-lg rounded p-3">
-                            <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Education</h4>
-
-                            <hr>
-
-                            <div class="row justify-content-around text-left">
-                                <div class="col-md-9 container-bodys show-on-scroll text-dark shadow-lg p-3 mb-2 rounded"
-                                id="education-layout">
-
-                                <div class="row p-2">
-                                    <div class="col-sm-1">
-                                        <img src="images/yorku_logo.png" class="img-fluid" id="yorku-logo-img" alt="yorku-logo-img">
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="h5">York University, Toronto <br>Bsc. Honors, Computer Science</div>
-
-                                        <br>
-                                        <div class="h5 font-weight-normal" id="coursework">
-                                            Coursework:
-                                            <ul class="font-weight-light">
-                                                <li>Web Development in Computer Science</li>
-                                                <li>Fundamentals of Data Structures</li>
-                                                <li>Advanced Object Oriented Programming</li>
-                                                <li>Discrete Mathematics, Theory of Computation</li>
-                                                <li>Assembly/Logic Programming</li>
-                                                <li>Research Directions in Computing</li>
-                                                <li>Software Tools, Mobile Computing</li>
-                                                <li>Algorithms, design and analysis</li>
-                                                <li>Software design (Project-heavy course)</li>
-                                                <li>Database Systems</li>
-                                                <li>User Interfaces</li>
-                                                <li>... more to come</li>
-
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <i class="float-right font-weight-light">2017 - present</i>
+                                <!-- Codify - Student Club member experince -->
+                                <div class="card container-bodys show-on-scroll">
+                                    <img class="card-img-top py-4" src="images/codefi-club-image.png" alt="codefi_club_img">
+                                    <div class="card-body">
+                                        <h5 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h5>
+                                        <ul class="card-text font-weight-light">
+                                            <li class="py-1">Occasionally teaching basic Web Development skills to 1st year students</li>
+                                            <li class="py-1">Maintaining a fun and learning environment for beginners</li>
+                                            <li class="py-1">General club duties as required </li>
+                                        </ul>
                                     </div>
                                 </div>
+
+                                <div class="card container-bodys show-on-scroll">
+                                    <img class="card-img-top py-4" src="images/codefi-club-image.png" alt="abstract_3">
+                                    <div class="card-body">
+                                        <h5 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h5>
+                                        <ul class="card-text font-weight-light">
+                                            <li class="py-1">My take at the classic brick-breaker. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
 
                             </div>
                         </div>
-
                     </div>
+
                 </div>
 
-                <!-- CONTACT ******************** -->
+                <!-- EDUCATION *********************************************** -->
 
-                <div class="container-fluid-sm" id="contact-outer">
+                <div class="container-fluid-sm" id="education-outer">
                     <div class="container text-center shadow-lg rounded p-3">
-                        <h4 class="container-titles show-on-scroll shadow-md px-2 py-1 rounded">Contact</h4>
+                        <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded">Education</h4>
 
                         <hr>
 
-                        <table class="table text-right w-auto table-borderless shadow-lg rounded container-bodys show-on-scroll">
-                            <thead>
-                                <tr>
-                                    <th class="border-right">Social Media</th>
-                                    <th>Business inquiries</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td id="social-links" class="border-right">
-                                        <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
-                                            Github <img src="images/git_logo.dms" alt="git">
-                                        </a>
-                                    </td>
-                                    <td id="social-links">
-                                        <a href="mailto:singh.rbir@gmail.com?Subject=Hi%20there!%20I%20found%20your%20portfolio" class="fade show" target="_top">
-                                            singh.rbir@gmail.com <img src="images/email_logo.dms" alt="em">
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="social-links" class="border-right">
-                                        <a href="https://www.linkedin.com/in/singh-rbir/" class="fade show" target="_blank">
-                                            LinkedIn <img src="images/linked_in_logo.png" alt="in">
-                                        </td>
-                                        <td id="social-links">(+1) 204-955-5272 <i class="fas fa-mobile-alt"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td id="social-links" class="border-right">
-                                            <a href="https://www.facebook.com/singh.rbir" class="fade show" target="_blank">
-                                                Facebook <img src="images/fb-logo.png" alt="fb">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="row justify-content-around text-left">
+                            <div class="col-md-9 container-bodys show-on-scroll text-dark p-3 mb-2 rounded"
+                            id="education-layout">
 
-                        </div>
+                            <div class="row p-2">
+                                <div class="col-sm-1">
+                                    <img src="images/yorku_logo.png" class="img-fluid" id="yorku-logo-img" alt="yorku-logo-img">
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="h5">York University, Toronto <br>Bsc. Honors, Computer Science</div>
 
-                        <div class="container py-1">
-                            <p class="text-muted text-right">&copy 2020 Rajanbir Singh</p>
+                                    <br>
+                                    <div class="h5 font-weight-normal" id="coursework">
+                                        Coursework:
+                                        <ul class="font-weight-light">
+                                            <li>Web Development in Computer Science</li>
+                                            <li>Fundamentals of Data Structures</li>
+                                            <li>Advanced Object Oriented Programming</li>
+                                            <li>Discrete Mathematics, Theory of Computation</li>
+                                            <li>Assembly/Logic Programming</li>
+                                            <li>Research Directions in Computing</li>
+                                            <li>Software Tools, Mobile Computing</li>
+                                            <li>Algorithms, design and analysis</li>
+                                            <li>Software design (Project-heavy course)</li>
+                                            <li>Database Systems</li>
+                                            <li>User Interfaces</li>
+                                            <li>... more to come</li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <i class="float-right font-weight-light">2017 - present</i>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
+            </div>
 
-                <!-- Scrollspy ends here ******************************** -->
+            <!-- CONTACT ******************** -->
+
+            <div class="container-fluid-sm" id="contact-outer">
+                <div class="container text-center shadow-lg rounded p-3">
+                    <h4 class="container-titles show-on-scroll shadow  px-2 py-1 rounded">Contact</h4>
+
+                    <hr>
+
+                    <table class="table text-right w-auto table-borderless rounded container-bodys show-on-scroll">
+                        <thead>
+                            <tr>
+                                <th class="border-right">Social Media</th>
+                                <th>Business inquiries</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="social-links" class="border-right">
+                                    <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
+                                        Github <img src="images/git_logo.dms" alt="git">
+                                    </a>
+                                </td>
+                                <td id="social-links">
+                                    <a href="mailto:singh.rbir@gmail.com?Subject=Hi%20there!%20I%20found%20your%20portfolio" class="fade show" target="_top">
+                                        singh.rbir@gmail.com <img src="images/email_logo.dms" alt="em">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="social-links" class="border-right">
+                                    <a href="https://www.linkedin.com/in/singh-rbir/" class="fade show" target="_blank">
+                                        LinkedIn <img src="images/linked_in_logo.png" alt="in">
+                                    </td>
+                                    <td id="social-links">(+1) 204-955-5272 <i class="fas fa-mobile-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td id="social-links" class="border-right">
+                                        <a href="https://www.facebook.com/singh.rbir" class="fade show" target="_blank">
+                                            Facebook <img src="images/fb-logo.png" alt="fb">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="container py-1">
+                        <p class="text-muted text-right">&copy 2020 Rajanbir Singh</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scrollspy ends here ******************************** -->
 
 
 
-            </body>
-            </html>
+        </body>
+        </html>
