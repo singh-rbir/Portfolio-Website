@@ -22,11 +22,12 @@ a:hover{
 
 .header{
     background-color: var(--light-blue);
+    overflow: visible;
 }
 
 .header h2 {
-    font-family: Verdana, sans-serif, helvetica;
-    font-weight: lighter;
+    font-family: 'Raleway', Verdana, sans-serif;
+    font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: .15em;
     /*color: var(--dark-brown);*/
@@ -57,8 +58,15 @@ a:hover{
 /* ******************* NAVBAR SECTION **************************************/
 
 .navbar{
-    /*background-color: #var(--dark-brown);*/
+    background-color: var(--light-blue);
+    /* border-bottom: 0.2rem solid var(--dark-blue); */
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
+.navbar.scrolled{
+    background-color: #22272b;
     border-bottom: 0.2rem solid var(--dark-blue);
+    animation: fade-effect-down 0.5s;
     opacity: 0.96;
 }
 
@@ -75,10 +83,25 @@ a:hover{
     opacity: 1.0;
 }
 
-.navbar a:hover{
-    color: #d3d3d3;
-    border-bottom: 2px solid;
-    padding-bottom: 0;
+.navbar li a{
+    /* color: #000; */
+    text-decoration: none;
+}
+
+.navbar li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--orange);
+    transition: width .3s;
+}
+
+.navbar li a:hover::after{
+    /* color: #d3d3d3; */
+    /* border-bottom: 2px solid; */
+    /* padding-bottom: 0; */
+    width: 100%;
     transition: 0.4s ease;
 }
 
@@ -111,7 +134,7 @@ a:hover{
 
 #intro h2{
     font: 5em bold;
-    font-family: monospace;
+    font-family: 'Raleway', Verdana, sans-serif;
     animation: fade-effect-down 2s;
 }
 
@@ -126,13 +149,13 @@ a:hover{
 }
 
 #intro h2:first-child::first-letter{ /* H */
-    font-size: 2em;
-    font-family: monospace;
+    font-size: 1.5em;
+    font-family: 'Raleway', Verdana, sans-serif;
 }
 
 #intro h3{ /* This is Raj */
     font: 3em bold;
-    font-family: monospace;
+    font-family: 'Raleway', Verdana, sans-serif;
     animation: fade-effect-up 2s;
     display: inline-block;
     transition-property: background-color;
@@ -148,16 +171,21 @@ a:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 4s;
+    overflow: hidden;
 }
 
 #intro-text{
-    font-family: helvetica, sans-serif;
+    font-family: 'Raleway', Verdana, sans-serif;
+    font-size: 1.2rem;
 }
 
+p#before-quote-text{
+    font-family: 'Raleway', Verdana, sans-serif;
+}
 /* Blockquote code ***********************/
 
 blockquote{
-    border-left:none
+    border-left: none
 }
 
 .quote-badge{
@@ -179,6 +207,7 @@ blockquote{
 @media only screen and (max-width: 700px) { /* small screens, landscape view */
 
 }
+
 .quotation-mark{
     /* margin-top: 0.5rem; */
     font-weight: bold;
@@ -192,11 +221,15 @@ blockquote{
     margin-top: -4rem;
 }
 
+.blog-post-bottom{
+    font-family: 'Raleway', Verdana, sans-serif;
+}
+
 /* Blockquote end *************** */
 
 /* SETTINGS COMMON TO ALL SECTIONS ******************************** */
 #about-outer h4:first-child, #experience-outer h4:first-child, #education-outer h4:first-child, #contact-outer h4:first-child{
-    font-family: monospace;
+    font-family: 'Raleway', Verdana, sans-serif;
     display: inline-block;
     background-color: var(--light-blue);
 }
@@ -226,7 +259,7 @@ blockquote{
 }
 
 #about-outer h3{
-    font-family: monospace;
+    font-family: 'Raleway', Verdana, sans-serif;
     font-weight: bold;
     font-size: 10rem;
     text-align: left;
@@ -249,6 +282,7 @@ blockquote{
     /* background-color: var(--light-blue);*/
     overflow: auto;
     background: linear-gradient(var(--light-blue), var(--light-brown));
+    font-family: 'Raleway', Verdana, sans-serif;
 }
 
 #experience-outer .container:first-of-type{
@@ -331,6 +365,7 @@ blockquote{
     padding-bottom: 4rem;
     overflow: auto;
     background-image: linear-gradient(var(--light-brown), var(--dark-brown)); /* light brown to dark brown */
+    font-family: 'Raleway', Verdana, sans-serif;
     /* background-color: var(--light-brown); */
 }
 
@@ -342,7 +377,6 @@ blockquote{
 
 #education-layout{
     background-color: var(--light-blue);
-
 }
 
 #education-layout #coursework ul{
@@ -358,8 +392,8 @@ blockquote{
 
 #contact-outer{
     padding-top: 2rem;
-    /* background-color: var(--dark-brown); */ 
-    font-family: monospace;
+    /* background-color: var(--dark-brown); */
+    font-family: 'Raleway', Verdana, sans-serif;
     background-image: url('images/DarkCyan.png');
     background-repeat: no-repeat;
     background-position: bottom;
@@ -377,10 +411,7 @@ blockquote{
 #contact-outer table{
     float: right;
     background-color: var(--light-blue);
-}
-
-#contact-outer p{
-    font-family: monospace;
+    font-family: 'Raleway', Verdana, sans-serif;
 }
 
 #contact-outer #social-links a{

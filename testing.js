@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $(function(){
+        $(document).scroll(function(){
+            var $nav = $(".navbar");
+            var $header = $(".header");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > ($nav.height() + $header.height()));
+        })
+    })
+
     /* MAKES THE NAVBAR-TOGGLE ON CLICKING A LINK ***************/
     $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').collapse('hide');

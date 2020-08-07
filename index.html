@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Rajanbir Singh</title>
 
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+
+    <!-- Google font link: Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,400&display=swap" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -44,7 +47,7 @@
             <h2 class="text-center text-dark">RAJANBIR SINGH</h2>
             <!-- <h6 class="text-right sticky-top">Website under construction</h6> -->
 
-            <div class="text-center pb-1" id="social-links">
+            <div class="text-center" id="social-links">
                 <a href="https://github.com/singh-rbir" class="fade show" target="_blank">
                     <img src="images/git_logo.dms" alt="git">
                 </a>
@@ -55,7 +58,7 @@
                     <img src="images/fb-logo.png" alt="fb">
                 </a>
                 <a href="mailto:singh.rbir@gmail.com?Subject=Hi%20there!%20I%20found%20your%20portfolio" class="fade show" target="_top">
-                    <img src="images/email_logo.dms" alt="em">
+                    <img src="images/email_logo.dms" alt="email_logo">
                 </a>
             </div>
 
@@ -64,7 +67,7 @@
 
     <!-- ********************************* NAVBAR ************************************************** -->
 
-    <nav class="navbar bg-dark navbar-expand-sm shadow sticky-top fade show my-0" id="topNavBar">
+    <nav class="navbar navbar-expand-sm shadow-bottom sticky-top fade show py-1 my-0" id="topNavBar">
         <div class="container-sm">
 
             <!-- Navbar-brand element to appear/disappear on scroll -->
@@ -73,11 +76,11 @@
             </div>
 
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
-                <i class="fas fa-bars text-primary bg-light px-2 py-1 my-0 rounded"></i>
+                <i class="fas fa-bars text-primary bg-light py-1 px-2 my-0 rounded"></i>
             </button>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center">
+                <ul class="navbar-nav text-center font-weight-bold">
                     <li class="nav-item">
                         <a href="#about-outer" class="nav-link px-3 fade show">About</a>
                     </li>
@@ -116,7 +119,7 @@
                     </div>
                     <!-- Quotation -->
                     <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 rounded">
-                        <p class="text-dark bg-light d-inline-block font-weight-light p-1 rounded">Something I once read</p>
+                        <p class="text-dark bg-light d-inline-block font-weight-normal p-1 rounded" id="before-quote-text">Something I once read</p>
 
                         <blockquote class="quote-box text-light mx-auto">
                             <p class="quotation-mark">
@@ -268,7 +271,7 @@
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom"><i class="fab fa-android"></i> Voice Alarm</h5>
-                                        <ul class="card-text font-weight-light">
+                                        <ul class="card-text">
                                             <li class="py-1">An android app that uses <b>speech recognition</b> to wake you up</li>
                                             <li class="py-1">The alarm is dimissed by reading the text shown on the screen, into phone's mic</li>
                                             <li class="py-1">This engages the groggy user to put some effort into waking up</li>
@@ -276,20 +279,20 @@
 
                                         <!-- Play store link -->
                                         <a href="https://play.google.com/store/apps/details?id=my.app.rajanbirsingh.voicealarm" class="card-link m-1" target="_blank"><img src="images/google-play-image.png" class="img-fluid" id="google-play-img"></a>
-                                        
+
                                         <!-- Github link -->
-                                        <a class="btn btn-primary m-1 py-1" href="https://github.com/singh-rbir/Voice-Alarm-AndroidApp" target="_blank"><i class="fab fa-github"></i> Github</a>                        
-                                        
+                                        <a class="btn btn-primary m-1 py-1" href="https://github.com/singh-rbir/Voice-Alarm-AndroidApp" target="_blank"><i class="fab fa-github"></i> Github</a>
+
                                     </div>
                                     <div class="card-footer text-right py-0">
                                         <small><u><a href="privacy_policy.html" class="d-block text-right text-muted" target="_blank"><i class="fas fa-file-contract p-1"></i>Privacy Policy</a></u></small>
                                     </div>
 
                                 </div>
-                                
+
                                 <!-- Brick-Breaker game ------->
                                 <div class="card container-bodys show-on-scroll">
-                                    
+
                                     <!-- CAROUSEL -->
                                     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
@@ -311,7 +314,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        
+
                                         <!-- CAROUSEL CONTROLS -->
                                         <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -322,19 +325,19 @@
                                             <span class="sr-only">Next</span>
                                         </a>
                                     </div>
-                                    
+
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom"><i class="fas fa-gamepad"></i> Break-a-Brick </h5>
-                                        <ul class="card-text font-weight-light">
+                                        <ul class="card-text">
                                             <li class="py-1">My take at the classic brick-breaker game. </li>
                                         </ul>
 
                                         <!-- Link to play -->
                                         <a class="btn btn-primary m-1 py-1" href="https://break-a-brick.netlify.app" target="_blank"><i class="fas fa-play"></i> Play here</a>
-                                        
+
                                         <!-- Github link -->
-                                        <a class="btn btn-primary py-1" href="https://github.com/singh-rbir/brick_breaker-VanillaJS_game" target="_blank"><i class="fab fa-github"></i> Github</a>   
+                                        <a class="btn btn-primary py-1" href="https://github.com/singh-rbir/brick_breaker-VanillaJS_game" target="_blank"><i class="fab fa-github"></i> Github</a>
                                     </div>
                                 </div>
 
@@ -344,7 +347,7 @@
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h5>
-                                        <ul class="card-text font-weight-light">
+                                        <ul class="card-text">
                                             <li class="py-1">Occasionally teaching basic Web Development skills to 1st year students</li>
                                             <li class="py-1">Maintaining a fun and learning environment for beginners</li>
                                             <li class="py-1">General club duties as required </li>
@@ -359,7 +362,7 @@
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom">Peer Tutor in Webdesign Course</h5>
-                                        <ul class="card-text font-weight-light">
+                                        <ul class="card-text">
                                             <li class="py-1">Tutored/Mentored students in EECS1012 at York Univ.</li>
                                             <li class="py-1">Provided students with help in JS (JQuery), HTML, CSS, JSON</li>
                                             <li class="py-1">Occasionally directed lab materials</li>
@@ -395,8 +398,8 @@
                                     <br>
                                     <div class="h5 font-weight-normal" id="coursework">
                                         Coursework:
-                                        <ul class="font-weight-light">
-                                            <li>Web Development in Computer Science</li>
+                                        <ul>
+                                            <li>Responsive Web Development</li>
                                             <li>Fundamentals of Data Structures</li>
                                             <li>Advanced Object Oriented Programming</li>
                                             <li>Discrete Mathematics, Theory of Computation</li>
