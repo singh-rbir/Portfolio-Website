@@ -6,6 +6,12 @@
     --dark-brown: #341C09;
 }
 
+*{
+    margin: 0px;
+    /* padding: 0px; */
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -50,7 +56,7 @@ a:hover{
     transition: 0.5s ease; /* makes the opacity effect go-in and come-out slowly */
     opacity: 0.7;
     text-decoration: none;
-    animation: hovering-effect 0.5s ease-in;
+    animation: hovering-effect 0.20s ease;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -61,16 +67,17 @@ a:hover{
     background-color: var(--light-blue);
     /* border-bottom: 0.2rem solid var(--dark-blue); */
     font-family: 'Raleway', Verdana, sans-serif;
+    z-index: 3;
 }
 
 .navbar.scrolled{
     background-color: #22272b;
-    border-bottom: 0.2rem solid var(--dark-blue);
+    border-bottom: 0.1rem solid var(--dark-blue);
     animation: fade-effect-down 0.5s;
     opacity: 0.96;
 }
 
-.navbar ul{
+.navbar ul li{
     animation: fade-effect-down 0.75s;
     /* animation-delay: 1s; */
 }
@@ -120,12 +127,21 @@ a:hover{
 /* ***********************BODY STARTS HERE************************************** */
 
 /* ***********INTRO SECTION ***************** */
+/* .particles-js {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} */
+
 #intro{
     padding-top: 4rem;
     padding-bottom: 4rem;
     height: 85vh;
     overflow: auto;
-    /* background-color: #007bff; */
     background-image: url('images/DarkCyan.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -451,27 +467,28 @@ blockquote{
 /* ANIMATIONS ***********************************************************************************/
 
 @keyframes fade-effect-down {
-    from {opacity: 0; transform: translateY(-5em) rotateX(-90deg);
-                transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
+    from {opacity: 0; transform: translateY(-5em) rotateZ(-25deg);
+                transition: transform 1s 0.25s cubic-bezier(0, 1, 0.3, 1),
                 opacity 2.0s 0.25s ease-in;}
     to {opacity: 1;}
 }
 
 @keyframes fade-effect-up {
-    from {opacity: 0; transform: translateY(5em) rotateX(-90deg);
+    from {opacity: 0; transform: translateY(5em) rotateZ(-25deg);
                 transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1),
                 opacity 2.0s 0.25s ease-in;}
     to {opacity: 1;}
 }
 
 @keyframes scroll-down-effect {
-    0% {opacity: 0.6; top: 0em;}
+    0% {opacity: 0.5; top: 0em;}
     100% {opacity: 1; top: 3em; background-color: white;}
 }
 
 @keyframes hovering-effect {
-    0% {top: -0.2em;}
-    100% {top: 0.2em;}
+    0% {left: -0.05em}
+    50% {left: 0em}
+    100% {left: 0.05em}
 }
 /* Keep those elements hidden at first. Each type of element has a little different animation*/
 .container-headers{ /* this animation is only used in the header in the intro section of page */
