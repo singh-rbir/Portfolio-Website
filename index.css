@@ -84,7 +84,7 @@ a:hover{
 
 .navbar.scrolled{
     background-color: #22272b;
-    border-bottom: 0.1rem solid var(--dark-blue);
+    box-shadow: 2px 2px 1.5rem 0 var(--color3);
     opacity: 0.96;
 }
 
@@ -96,7 +96,7 @@ a:hover{
 .navbar:hover{
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-    border-bottom: 0.2rem solid #22272b;
+    box-shadow: 2px 2px 1rem 0 var(--color3);
     transition: 0.4s ease;
     opacity: 1.0;
 }
