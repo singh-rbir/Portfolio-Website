@@ -22,7 +22,7 @@
 
     <!-- ********************************* HEADER ************************************************** -->
 
-    <div class="header pt-3" id="header">
+    <div class="header pt-4 pb-2" id="header">
         <div class="container-fluid-sm">
 
             <h2 class="text-center text-dark">RAJANBIR SINGH</h2>
@@ -94,43 +94,27 @@
         <div data-spy="scroll" data-target="#topNavBar" data-offset="0" id="scroll_data">
             <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
-                <!-- ******************************
-                    INTRO
-                    ******************************* -->
-                <div class="container-fluid-sm text-center" id="intro">
-                    <div class="row justify-content-around">
-                        <!-- Intro text -->
-                        <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 rounded">
-                            <h2 class="text-light text-center p-1" id="intro-top">Hey!</h2>
-                            <h3 class="shadow text-center rounded bg-light p-1" id="intro-bottom">I'm Raj.</h3>
-                        </div>
-                        <!-- Quotation -->
-                        <div class="col-sm-6 container-bodys show-on-scroll p-3 my-3 rounded">
-                            <p class="text-dark bg-light d-inline-block font-weight-normal p-1 rounded" id="before-quote-text">Something I once read</p>
+            <!-- ******************************
+                INTRO
+                ******************************* -->
+            <div class="container-fluid-sm text-center" id="intro">
 
-                            <blockquote class="quote-box text-light mx-auto">
-                                <p class="quotation-mark">
-                                    “
-                                </p>
-                                <p class="quote-text px-2">
-                                    <i>I know that I am intelligent, because I know that I know nothing.</i>
-                                </p>
-                                <hr>
-                                <div class="blog-post-actions">
-                                    <p class="blog-post-bottom text-left text-primary px-3">
-                                        - Socrates
-                                    </p>
-                                </div>
-                            </blockquote>
+                <div id="particles-js"></div>
 
-                        </div>
-                    </div>
-                    <div class="container text-center">
-                        <p class="text-center text-light my-3" id="intro-text">I'm a student, an android developer and a tech enthusiast.</p>
-                        <i class="fas fa-arrow-alt-circle-down bg-dark" id="scroll-down-icon"></i>
+                <div class="row justify-content-around" id="intro-inner">
+                    <!-- Intro text -->
+                    <div class="col-sm-12 container-bodys show-on-scroll p-3 my-3 rounded">
+                        <h2 class="text-light text-center p-1" id="intro-top">Hey!</h2>
+                        <h3 class="shadow text-center rounded bg-light p-1" id="intro-bottom">I'm Raj.</h3>
                     </div>
 
                 </div>
+                <div class="container text-center">
+                    <p class="text-center text-light my-3" id="intro-text">I'm a student, an android developer and a tech enthusiast.</p>
+                    <i class="fas fa-arrow-alt-circle-down bg-dark" id="scroll-down-icon"></i>
+                </div>
+
+            </div>
 
             <!-- ***********************************
                 ABOUT ME
@@ -142,13 +126,34 @@
                     <hr>
 
                     <div class="row justify-content-around text-left">
-                        <div class="col-sm-5 container-bodys show-on-scroll text-dark p-3 mb-2 shadow-lg rounded" id="about-jumbo">
-                            <!-- <h3>What About Me?</h3> -->
-                            <img src="images/about-outer-img.png" class="img-fluid shadow-lg" alt="about-outer-img">
+                        <!-- <div class="col-sm-5 container-bodys show-on-scroll text-dark p-3 mb-2 shadow-lg rounded" id="about-jumbo"> -->
+                        <!-- <h3>What About Me?</h3> -->
+                        <!-- <img src="images/about-outer-img.png" class="img-fluid shadow-lg" alt="about-outer-img">
+                    </div> -->
+                        <!-- Quotation -->
+                        <div class="col-sm-4 container-bodys show-on-scroll my-auto">
+                            <p class="text-dark font-weight-normal rounded" id="before-quote-text">Something great words...</p>
+
+                            <blockquote class="quote-box text-light bg-dark px-3 py-1 mx-auto">
+                                <p class="quotation-mark text-info text-center">
+                                    “
+                                </p>
+                                <p class="quote-text">
+                                    <i>I know that I am intelligent, because I know that I know nothing.</i>
+                                </p>
+                                <hr class="bg-light">
+                                <div class="blog-post-actions">
+                                    <p class="blog-post-bottom text-left text-info">
+                                        Socrates
+                                    </p>
+                                </div>
+                            </blockquote>
+
                         </div>
 
-                        <div class="col-sm-6 container-bodys show-on-scroll bg-dark text-light shadow-lg p-3 mb-2 rounded" id="terminal-layout">
+                        <div class="col-sm-6 container-bodys show-on-scroll bg-dark text-light shadow-lg mb-2 rounded" id="terminal-layout">
 
+                            </br>
                             ~ <code>[education]</code>
                             <div class="ml-3 shadow-lg" id="output">
                                 => York University, Toronto
@@ -472,8 +477,8 @@
             <!-- Scrollspy ends here ******************************** -->
 
             <!-- Particle-js library -->
-            <!-- <script src="./particles.js"></script>
-            <script src="./app.js"></script> -->
+            <script src="./particles.js"></script>
+            <script src="./app.js"></script>
 
             <!-- jQuery library -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

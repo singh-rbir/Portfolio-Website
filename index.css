@@ -1,9 +1,21 @@
 :root{
     --dark-blue: #236ab9;
     --light-blue: #D4E4F7;
-    --orange: #FC7307;
-    --light-brown: #B85B14;
-    --dark-brown: #341C09;
+    /* --orange: #FC7307; */
+    --orange: #090f20;
+    /* --light-brown: #B85B14; */
+    --light-brown: #141C3E;
+    /* --dark-brown: #341C09; */
+    --dark-brown: #29050F;
+    --rich-black: #090f20;
+    --oxford-blue: #141C3E;
+    --dark-sienna: #29050F;
+    --raisin-black: #181B25;
+
+    --color1: #090f20;
+    --color2: #141C3E;
+    --color3: #29050F;
+    --color4: #181B25;
 }
 
 *{
@@ -64,7 +76,7 @@ a:hover{
 /* ******************* NAVBAR SECTION **************************************/
 
 .navbar{
-    background-color: var(--light-blue);
+    background-color: var(--color3);
     /* border-bottom: 0.2rem solid var(--dark-blue); */
     font-family: 'Raleway', Verdana, sans-serif;
     z-index: 3;
@@ -84,14 +96,17 @@ a:hover{
 .navbar:hover{
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
-    border-bottom: 0.2rem solid var(--orange);
+    border-bottom: 0.2rem solid #22272b;
     transition: 0.4s ease;
     opacity: 1.0;
 }
 
 .navbar li a{
-    /* color: #000; */
     text-decoration: none;
+}
+
+.navbar li a:hover{
+    color: var(--light-blue);
 }
 
 .navbar li a::after {
@@ -99,14 +114,11 @@ a:hover{
     display: block;
     width: 0;
     height: 2px;
-    background: var(--orange);
+    background: var(--light-blue);
     transition: width .3s;
 }
 
 .navbar li a:hover::after{
-    /* color: #d3d3d3; */
-    /* border-bottom: 2px solid; */
-    /* padding-bottom: 0; */
     width: 100%;
     transition: 0.4s ease;
 }
@@ -126,25 +138,30 @@ a:hover{
 /* ***********************BODY STARTS HERE************************************** */
 
 /* ***********INTRO SECTION ***************** */
-/* .particles-js {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-} */
-
 #intro{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    /* padding-top: 4rem;
+    padding-bottom: 4rem; */
     height: 85vh;
     overflow: auto;
-    background-image: url('images/DarkCyan.png');
+    /* background-image: url('images/DarkCyan.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
+}
+
+#particles-js { /* resides inside intro */
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    height: inherit; /* only as tall as the intro section's height */
+    animation: intro-background-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* background-color: #b61924; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 #intro h2{
@@ -166,6 +183,11 @@ a:hover{
 #intro h2:first-child::first-letter{ /* H */
     font-size: 1.5em;
     font-family: 'Raleway', Verdana, sans-serif;
+}
+
+#intro-inner{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 #intro h3{ /* This is Raj */
@@ -192,15 +214,16 @@ a:hover{
 #intro-text{
     font-family: 'Raleway', Verdana, sans-serif;
     font-size: 1.2rem;
+    position: relative;
 }
 
+/* Blockquote section code ***********************/
 p#before-quote-text{
     font-family: 'Raleway', Verdana, sans-serif;
 }
-/* Blockquote code ***********************/
 
 blockquote{
-    border-left: none
+    border-left: none;
 }
 
 .quote-badge{
@@ -208,15 +231,13 @@ blockquote{
 }
 
 .quote-box{
-    overflow: hidden;
+    /* overflow: hidden; */
     /* margin-top: -50px; */
     /* padding-top: -100px; */
     border-radius: 0.5rem;
-    background-color: #4ADFCC;
     /* margin-top: 25px; */
-    color: white;
-    width: 50%;
-    box-shadow: 2px 2px 2px 2px #E0E0E0;
+    width: 80%;
+    box-shadow: 2px 2px 10px var(--color3);
 }
 
 @media only screen and (max-width: 700px) { /* small screens, landscape view */
@@ -226,14 +247,14 @@ blockquote{
 .quotation-mark{
     /* margin-top: 0.5rem; */
     font-weight: bold;
-    font-size: 6.5rem;
-    color: white;
+    font-size: 7rem;
     font-family: "Times New Roman", Georgia, Serif;
 }
 
 .quote-text{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: -4rem;
+    font-family: "Times New Roman", Georgia, Serif;
 }
 
 .blog-post-bottom{
@@ -256,13 +277,11 @@ blockquote{
     padding-bottom: 4rem;
     /* background-color: var(--orange); */
     overflow: auto;
-    background-image: linear-gradient(var(--orange), var(--light-blue));
+    background-image: linear-gradient(var(--color1), var(--color2));
 }
 
 #about-outer .container:first-of-type{
     background-color: var(--light-blue);
-    /* background-color: var(--orange); */
-    /* background-image: linear-gradient(var(--orange), var(--light-blue)); */
 }
 
 #terminal-layout{
@@ -282,7 +301,7 @@ blockquote{
 }
 
 #about-outer img{
-    margin: 0;
+    margin: 0px;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -296,7 +315,7 @@ blockquote{
     padding-bottom: 4rem;
     /* background-color: var(--light-blue);*/
     overflow: auto;
-    background: linear-gradient(var(--light-blue), var(--light-brown));
+    background: linear-gradient(var(--color2), var(--color3));
     font-family: 'Raleway', Verdana, sans-serif;
 }
 
@@ -379,7 +398,7 @@ blockquote{
     padding-top: 4rem;
     padding-bottom: 4rem;
     overflow: auto;
-    background-image: linear-gradient(var(--light-brown), var(--dark-brown)); /* light brown to dark brown */
+    background-image: linear-gradient(var(--color3), var(--color4)); /* light brown to dark brown */
     font-family: 'Raleway', Verdana, sans-serif;
     /* background-color: var(--light-brown); */
 }
@@ -409,10 +428,10 @@ blockquote{
     padding-top: 2rem;
     /* background-color: var(--dark-brown); */
     font-family: 'Raleway', Verdana, sans-serif;
-    background-image: url('images/DarkCyan.png');
+    /* background-image: url('images/DarkCyan.png');
     background-repeat: no-repeat;
-    background-position: bottom;
-    /* background-image: linear-gradient(var(--light-brown), var(--dark-brown)); */
+    background-position: bottom; */
+    background-image: linear-gradient(var(--color4), var(--light-blue));
 }
 
 #contact-outer .container:first-of-type{
@@ -464,6 +483,12 @@ blockquote{
 }
 
 /* ANIMATIONS ***********************************************************************************/
+@keyframes intro-background-animation {
+    0% {background: linear-gradient(var(--rich-black), var(--oxford-blue))}
+    50% {background: linear-gradient(var(--dark-sienna), var(--oxford-blue))}
+    100% {background: linear-gradient(var(--dark-sienna), var(--raisin-black))}
+
+}
 
 @keyframes fade-effect-down {
     from {opacity: 0; transform: translateY(-5em) rotateZ(-15deg);
