@@ -265,7 +265,7 @@ blockquote{
 /* Blockquote end *************** */
 
 /* SETTINGS COMMON TO ALL SECTIONS ******************************** */
-#about h4:first-child, #experience h4:first-child, #education h4:first-child, #contact h4:first-child{
+#about h4:first-child, #experience-outer h4:first-child, #education h4:first-child, #contact h4:first-child{
     font-family: 'Raleway', Verdana, sans-serif;
     display: inline-block;
     background-color: var(--light-blue);
@@ -311,7 +311,7 @@ blockquote{
 
 
 /* ************EXPERIENCE SECTION ****************** */
-#experience{
+#experience-outer{
     padding-top: 4rem;
     padding-bottom: 4rem;
     /* background-color: var(--light-blue);*/
@@ -320,29 +320,29 @@ blockquote{
     font-family: 'Raleway', Verdana, sans-serif;
 }
 
-#experience .container:first-of-type{
+#experience-outer .container:first-of-type{
     background-color: var(--light-blue);
     /* background-color: var(--light-blue); */
     /* background-image: linear-gradient(var(--light-blue), var(--light-brown)); */
 }
 
-#experience img{
+#experience-outer img{
     max-width: 100%;
 }
 
-#experience .card{
+#experience-outer .card{
     background-color: var(--light-blue);
 }
 
-#experience .card ul{
+#experience-outer .card ul{
     list-style-type: circle;
 }
 
-#experience .card-text{
+#experience-outer .card-text{
     text-align: left;
 }
 
-/* #experience .card:hover{
+/* #experience-outer .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */
 
