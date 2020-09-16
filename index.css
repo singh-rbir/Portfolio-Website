@@ -76,7 +76,8 @@ a:hover{
 /* ******************* NAVBAR SECTION **************************************/
 
 .navbar{
-    background-color: var(--color3);
+    /* background-color: var(--color3); */
+    animation: intro-background-animation 10s infinite alternate;
     /* border-bottom: 0.2rem solid var(--dark-blue); */
     font-family: 'Raleway', Verdana, sans-serif;
     z-index: 3;
@@ -264,7 +265,7 @@ blockquote{
 /* Blockquote end *************** */
 
 /* SETTINGS COMMON TO ALL SECTIONS ******************************** */
-#about-outer h4:first-child, #experience-outer h4:first-child, #education-outer h4:first-child, #contact-outer h4:first-child{
+#about h4:first-child, #experience h4:first-child, #education h4:first-child, #contact h4:first-child{
     font-family: 'Raleway', Verdana, sans-serif;
     display: inline-block;
     background-color: var(--light-blue);
@@ -272,7 +273,7 @@ blockquote{
 
 /* *************ABOUT SECTION ***************** */
 
-#about-outer{
+#about{
     padding-top: 4rem;
     padding-bottom: 4rem;
     /* background-color: var(--orange); */
@@ -280,7 +281,7 @@ blockquote{
     background-image: linear-gradient(var(--color1), var(--color2));
 }
 
-#about-outer .container:first-of-type{
+#about .container:first-of-type{
     background-color: var(--light-blue);
 }
 
@@ -292,7 +293,7 @@ blockquote{
     background-color: var(--light-blue); /* sky blue white */
 }
 
-#about-outer h3{
+#about h3{
     font-family: 'Raleway', Verdana, sans-serif;
     font-weight: bold;
     font-size: 10rem;
@@ -300,7 +301,7 @@ blockquote{
     overflow: auto;
 }
 
-#about-outer img{
+#about img{
     margin: 0px;
     position: relative;
     top: 50%;
@@ -310,7 +311,7 @@ blockquote{
 
 
 /* ************EXPERIENCE SECTION ****************** */
-#experience-outer{
+#experience{
     padding-top: 4rem;
     padding-bottom: 4rem;
     /* background-color: var(--light-blue);*/
@@ -319,29 +320,29 @@ blockquote{
     font-family: 'Raleway', Verdana, sans-serif;
 }
 
-#experience-outer .container:first-of-type{
+#experience .container:first-of-type{
     background-color: var(--light-blue);
     /* background-color: var(--light-blue); */
     /* background-image: linear-gradient(var(--light-blue), var(--light-brown)); */
 }
 
-#experience-outer img{
+#experience img{
     max-width: 100%;
 }
 
-#experience-outer .card{
+#experience .card{
     background-color: var(--light-blue);
 }
 
-#experience-outer .card ul{
+#experience .card ul{
     list-style-type: circle;
 }
 
-#experience-outer .card-text{
+#experience .card-text{
     text-align: left;
 }
 
-/* #experience-outer .card:hover{
+/* #experience .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } */
 
@@ -379,7 +380,7 @@ blockquote{
 }
 
 .card-columns {
-    /* the following 2 lines are causing the outer-container height to increase unwantedly*/
+    /* the following 2 lines are causing the container height to increase unwantedly*/
     /* display: inline-block; */
     /* -webkit-column-break-inside: avoid; */
 
@@ -394,7 +395,7 @@ blockquote{
 
 /* **************EDUCATION SECTION ******************** */
 
-#education-outer{
+#education{
     padding-top: 4rem;
     padding-bottom: 4rem;
     overflow: auto;
@@ -403,7 +404,7 @@ blockquote{
     /* background-color: var(--light-brown); */
 }
 
-#education-outer .container:first-of-type{
+#education .container:first-of-type{
     overflow: hidden;
     background-color: var(--light-blue);
     /* background-image: linear-gradient(var(--light-brown), var(--dark-brown));  */
@@ -424,7 +425,7 @@ blockquote{
 
 /* **************CONTACT SECTION ******************** */
 
-#contact-outer{
+#contact{
     padding-top: 2rem;
     /* background-color: var(--dark-brown); */
     font-family: 'Raleway', Verdana, sans-serif;
@@ -434,7 +435,7 @@ blockquote{
     background-image: linear-gradient(var(--color4), var(--light-blue));
 }
 
-#contact-outer .container:first-of-type{
+#contact .container:first-of-type{
     overflow: hidden;
     background-color: var(--light-blue);
     /* background-color: var(--light-brown); */
@@ -442,17 +443,17 @@ blockquote{
 
 }
 
-#contact-outer table{
+#contact table{
     float: right;
     background-color: var(--light-blue);
     font-family: 'Raleway', Verdana, sans-serif;
 }
 
-#contact-outer #social-links a{
-    text-decoration: none;
+#contact #social-links a{
+    /* text-decoration: none; */
 }
 
-#contact-outer #social-links img{
+#contact #social-links img{
     height: 1rem;
     width: 1rem;
     margin-top: auto;
@@ -460,6 +461,20 @@ blockquote{
     animation: fade-effect-down 0.75s;
     /* animation-delay: 0.5s; */
 }
+
+/* #contact table a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--light-blue);
+    transition: width .3s;
+}
+
+#contact table a:hover::after{
+    width: 100%;
+    transition: 0.4s ease;
+} */
 
 
 
@@ -484,9 +499,15 @@ blockquote{
 
 /* ANIMATIONS ***********************************************************************************/
 @keyframes intro-background-animation {
-    0% {background: linear-gradient(var(--rich-black), var(--oxford-blue))}
+    /* from {background: linear-gradient(var(--rich-black), var(--oxford-blue));}
+    to {background: linear-gradient(var(--dark-sienna), var(--raisin-black));} */
+    0% {background: var(--oxford-blue)}
+    50% {background: var(--dark-sienna)}
+    100% {background: var(--rich-black)}
+    /* 100% {background: var(--raisin-black)} */
+    /* 0% {background: linear-gradient(var(--rich-black), var(--oxford-blue))}
     50% {background: linear-gradient(var(--dark-sienna), var(--oxford-blue))}
-    100% {background: linear-gradient(var(--dark-sienna), var(--raisin-black))}
+    100% {background: linear-gradient(var(--dark-sienna), var(--raisin-black))} */
 
 }
 
