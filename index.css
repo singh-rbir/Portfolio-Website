@@ -264,10 +264,14 @@ blockquote{
 
 /* Blockquote end *************** */
 
-/* SETTINGS COMMON TO ALL SECTIONS ******************************** */
+/* ***********SETTINGS COMMON TO ALL SECTIONS *************************************** */
 #about h4:first-child, #experience-outer h4:first-child, #education h4:first-child, #contact h4:first-child{
     font-family: 'Raleway', Verdana, sans-serif;
-    display: inline-block;
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     background-color: var(--light-blue);
 }
 
@@ -330,8 +334,11 @@ blockquote{
 }
 
 #experience-outer .container:first-of-type{
-    background-color: var(--light-blue);
+    /* background-color: var(--light-blue); */
+}
 
+#experience-banner{
+    background-color: var(--light-blue);
 }
 
 #experience-outer img{
@@ -378,13 +385,31 @@ blockquote{
     height: 2rem;
 }
 
-#experience .card:first-child .card-img-top{
+#experience .card:nth-of-type(2) .card-img-top{
     width: auto;
 }
 
 #experience img.card-img-top{ /* card pics */
     justify-content: center;
     height: 15rem;
+}
+
+#experience .card-body a{
+    display: inline-block;
+}
+
+#experience .card-body a:nth-last-child(1)::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--dark-blue);
+    transition: width .3s;
+}
+
+#experience .card-body a:hover::after{
+    width: 100%;
+    transition: 0.4s ease;
 }
 
 .card-columns {
@@ -463,11 +488,11 @@ blockquote{
 }
 
 #contact #social-links a::after{
-    content: '';
+    content: ''; 
     display: block;
     width: 0;
     height: 2px;
-    background: var(--oxford-blue);
+    background: var(--dark-blue);
     transition: width .3s;
 }
 
