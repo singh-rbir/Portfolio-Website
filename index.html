@@ -122,10 +122,9 @@
                 ABOUT ME
                 ************************************ -->
             <div class="container-fluid-sm" id="about">
+
                 <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded text-center mx-auto">About</h4>
                 <div class="container shadow-lg text-center justify-content-center rounded p-3">
-                    
-                    <hr>
 
                     <div class="row justify-content-around text-left">
                         <!-- <h3>What About Me?</h3> -->
@@ -133,7 +132,7 @@
                     </div> -->
                         <!-- Quotation -->
                         <div class="col-sm-4 container-bodys show-on-scroll my-auto">
-                            <p class="text-dark font-weight-normal rounded" id="before-quote-text">Some great words...</p>
+                            <p class="display-4" id="before-quote-text">Some great words...</p>
 
                             <blockquote class="quote-box text-light bg-dark px-3 py-1 mx-auto">
                                 <p class="quotation-mark text-info text-center">
@@ -214,36 +213,60 @@
                 <!-- EXPERIENCE AND PROJECTS ************************************** -->
 
                 <div class="container-fluid-sm" id="experience-outer">
-                    <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded">Experience & Projects</h4>
-                    <div class="container p-3 shadow-lg text-center rounded">
 
-                        <div class="container-fluid-sm mb-3" id="experience-banner">
+                    <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded">Experience & Projects</h4>
+                    <div class="container shadow-lg text-center rounded p-0">
+
+                        <!-- <div class="container-fluid-sm mb-3" id="experience-banner">
                             <div class="row">
-                                <div class="col-sm-8">hello</div>
+                                <div class="col-sm-8">
+                                    
+                                </div>
                                 <div class="col-sm-4">
                                     <img src="images/experience-banner-img.png" class="img-fluid mx-auto pb-3" id="experience-banner-img" alt="experience-header-img">
                                 </div>
                             
                             </div>
+                        </div> -->
+                        <div class="jumbotron py-2 text-left" id="experience-jumbotron">
+                            <div class="row">
+                                <div class="col-sm-8 my-auto">
+                                    <p class="display-4">A mix of industry experience and project-based work.</p>
+                                    <p class="lead text-secondary font-weight-normal">Developing software is about problem-solving, not just writing code.</p>
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <img src="/images/experience-banner.png" class="experience-banner-img" alt="experience-banner">
+                                </div>
+                            </div>
+                            
                         </div>
-
 
                         <div class="container-fluid-sm text-left">
                             <div class="card-columns" id="experience">
-
+                                
                                 <!-- Walletifai Experience  ------->
                                 <div class="card container-bodys show-on-scroll">
-                                    <img class="card-img-top p-3 mx-auto" src="images/walletifai_logo.jpg" alt="walletifai_logo">
+                                    <img class="card-img-top img-fluid mx-auto" src="images/walletifai_logo.jpg" alt="walletifai_logo">
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom">Back End Developer @ <a href="https://www.linkedin.com/company/walletifai/" target="_blank">Walletifai</a></h5>
                                         <ul class="card-text">
-                                            <li class="py-1">Building RESTful API for a Fintech Mobile Application and Web Services</li>
-                                            <li class="py-1">Using Java 8, Spring Boot, Spring MVC, Servlet, Hibernate, MySQL, JDBC</li>
-                                            <li class="py-1">Performance Testing, Unit Testing with Postman and Junit</li>
-                                            <li class="py-1">Working in an agile scrum-based environment, CI & CD</li>
-
+                                            <li class="pb-1 text-secondary text-justify" id="card-subtitle"><b>INTERNSHIP</b> &bull; <i>08/2020 - present</i></li>
+                                            <li class="pb-1">Building <b>RESTful API</b> for a <b>Fintech</b> Mobile Application and Web Services</li>
+                                            <li class="pb-1">Integrating financial services APIs like <b>Plaid</b> with app logic to implement new features</li>
+                                            <li class="pb-1">Performance <b>Testing</b>, Unit Testing with Postman and Junit</li>
+                                            <li class="pb-1">Agile, scrum-based environment</li>
                                         </ul>
+                                        <kbd>Java</kbd>
+                                        <kbd>Spring Boot</kbd>
+                                        <kbd>Spring MVC</kbd>
+                                        <kbd>Hibernate</kbd>
+                                        <kbd>Servlet</kbd>
+                                        <kbd>JDBC</kbd>
+                                        <kbd>MySQL</kbd>
+                                        <kbd>Maven</kbd>
+                                        <kbd>GIT</kbd>
+
                                     </div>
                                 </div>
 
@@ -254,8 +277,8 @@
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                             <a href="https://play.google.com/store/apps/details?id=my.app.rajanbirsingh.voicealarm" target="_blank">
-                                                <div class="carousel-item active">
-                                                    <img class="card-img-top d-block mx-auto py-3" src="images/app_v2_screenshots/app-feature-graphic.png" alt="first slide">
+                                                <div class="carousel-item active first-image">
+                                                    <img class="card-img-top d-block mx-auto" src="images/app_v2_screenshots/app-feature-graphic.png" alt="first slide">
                                                 </div>
                                                 <div class="carousel-item">
                                                     <img class="card-img-top d-block mx-auto" src="images/app_v2_screenshots/app-mainActivity.png" alt="second slide">
@@ -280,7 +303,7 @@
                                                 </div>
                                             </a>
                                         </div>
-
+                                        
                                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
@@ -293,18 +316,27 @@
 
                                     <!-- card body -->
                                     <div class="card-body">
-                                        <h5 class="card-title shadow-sm text-center border-bottom"><i class="fab fa-android"></i> Voice Alarm</h5>
+                                        <h5 class="card-title shadow-sm text-center"><i class="fab fa-android"></i> Voice Alarm</h5>
+
                                         <ul class="card-text">
                                             <li class="py-1">An android app that uses <b>speech recognition</b> to wake you up</li>
                                             <li class="py-1">The alarm is dimissed by reading the text shown on the screen, into phone's mic</li>
-                                            <li class="py-1">This engages the groggy user to put some effort into waking up</li>
+                                            <!-- <li class="py-1">Engages the groggy user to put some effort into waking up</li> -->
                                         </ul>
 
-                                        <!-- Play store link -->
-                                        <a href="https://play.google.com/store/apps/details?id=my.app.rajanbirsingh.voicealarm" class="card-link m-1" target="_blank"><img src="images/google-play-image.png" class="img-fluid" id="google-play-img"></a>
+                                        <div class="d-block justify-content-around">
+                                            <!-- Play store link -->
+                                        <a href="https://play.google.com/store/apps/details?id=my.app.rajanbirsingh.voicealarm" class="card-link"
+                                            target="_blank"><img src="images/google-play-image.png" class="img-fluid m-1" id="google-play-img"></a>
 
                                         <!-- Github link -->
                                         <a class="my-auto mx-1" href="https://github.com/singh-rbir/Voice-Alarm-AndroidApp" target="_blank"><i class="fab fa-github"></i> Github</a>
+                                        </div>
+
+                                        <kbd>Java</kbd>
+                                        <kbd>Android Frameworks</kbd>
+                                        <kbd>Native</kbd>
+                                        <kbd>MySQL</kbd>
 
                                     </div>
                                     <div class="card-footer text-right py-0">
@@ -366,7 +398,7 @@
 
                                 <!-- Codify - Student Club member experience ------->
                                 <div class="card container-bodys show-on-scroll">
-                                    <img class="card-img-top py-3" src="images/codefi-club-image.png" alt="codefi_club_img">
+                                    <img class="card-img-top mx-auto" src="images/codefi-club-image.png" alt="codefi_club_img">
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom">CodeFi Member - Student Club</h5>
@@ -381,7 +413,7 @@
 
                                 <!-- PEER MENTOR EXPERIENCE ------->
                                 <div class="card container-bodys show-on-scroll">
-                                    <img class="card-img-top" src="images/peer-mentor.png" alt="peer mentoring">
+                                    <img class="card-img-top mx-auto" src="images/peer-mentor.png" alt="peer mentoring">
                                     <!-- card body -->
                                     <div class="card-body">
                                         <h5 class="card-title shadow-sm text-center border-bottom">Peer Tutor in Webdesign Course</h5>
@@ -404,10 +436,7 @@
                 <div class="container-fluid-sm" id="education">
                     
                     <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded">Education</h4>
-
                     <div class="container text-center shadow-lg rounded p-3">
-
-                        <hr>
 
                         <div class="row justify-content-around text-left">
                             <div class="col-md-9 container-bodys show-on-scroll text-dark p-3 mb-2 rounded"
@@ -458,10 +487,7 @@
             <div class="container-fluid-sm" id="contact">
 
                 <h4 class="container-titles show-on-scroll shadow  px-2 py-1 rounded">Contact</h4>
-
                 <div class="container text-center shadow-lg rounded p-3">
-
-                    <hr>
 
                     <table class="table text-right w-auto rounded container-bodys show-on-scroll">
                         <thead>
@@ -511,7 +537,7 @@
             <!-- Scrollspy ends here ******************************** -->
 
             <!-- Particle-js library -->
-            <!-- <script src="./particles.js"></script> -->
+            <script src="./particles.js"></script>
             <script src="./app.js"></script>
 
             <!-- jQuery library -->
