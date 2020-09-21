@@ -455,6 +455,13 @@ blockquote{
     }
 }
 
+#experience kbd {
+    color: var(--light-blue);
+    /* border: 1px solid var(--color3); */
+    background-color: var(--color3);
+    opacity: 0.9;
+}
+
 
 /* **************EDUCATION SECTION ******************** */
 
