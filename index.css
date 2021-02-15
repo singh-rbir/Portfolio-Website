@@ -152,7 +152,7 @@ a:hover{
 
 #particles-js { /* resides inside intro */
     position: absolute;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     height: inherit; /* only as tall as the intro section's height */
     animation: intro-background-animation;
@@ -518,7 +518,7 @@ blockquote{
 }
 
 #contact #social-links a::after{
-    content: ''; 
+    content: '';
     display: block;
     width: 0;
     height: 2px;
