@@ -143,7 +143,7 @@ a:hover{
     /* padding-top: 4rem;
     padding-bottom: 4rem; */
     height: 85vh;
-    overflow: auto;
+    overflow: hidden;
     /* background-image: url('images/DarkCyan.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -419,11 +419,11 @@ blockquote{
     border-radius: 0.2rem;
 }
 
-#experience .card:nth-child(2) .card-img-top{
+#experience .card:nth-child(5) .card-img-top{
     transform: skewX(3deg) rotateY(10deg) rotateX(20deg);
 }
 
-#experience .card:nth-child(2) .first-image .card-img-top  {
+#experience .card:nth-child(5) .first-image .card-img-top  {
     transform: none;
 }
 
