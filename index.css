@@ -77,16 +77,19 @@ a:hover{
 
 .navbar{
     /* background-color: var(--color3); */
-    animation: intro-background-animation 10s infinite alternate;
+    /* animation: intro-background-animation 10s infinite alternate; */
     /* border-bottom: 0.2rem solid var(--dark-blue); */
+    background-color: none;
     font-family: 'Raleway', Verdana, sans-serif;
-    z-index: 3;
+    z-index: 5;
 }
 
 .navbar.scrolled{
     background-color: #22272b;
     box-shadow: 2px 2px 1.5rem 0 var(--color3);
     opacity: 0.96;
+    z-index: 5;
+    position: sticky;
 }
 
 .navbar ul li{
@@ -124,7 +127,7 @@ a:hover{
     transition: 0.4s ease;
 }
 
-/* Following two scroll classes for making navbar-brand appear/disappear on scoll */
+/* Two scroll classes::: for making navbar-brand appear/disappear on scoll */
 
 .beforeScroll{
     height: auto;
@@ -139,10 +142,12 @@ a:hover{
 /* ***********************BODY STARTS HERE************************************** */
 
 /* ***********INTRO SECTION ***************** */
+#intro-wrapper{
+    height: 100vh;
+}
 #intro{
     /* padding-top: 4rem;
     padding-bottom: 4rem; */
-    height: 85vh;
     overflow: hidden;
     /* background-image: url('images/DarkCyan.png');
     background-repeat: no-repeat;
@@ -165,6 +170,11 @@ a:hover{
     background-position: 50% 50%;
 }
 
+#intro-inner{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
 #intro h2{
     font: 5em bold;
     font-family: 'Raleway', Verdana, sans-serif;
@@ -184,11 +194,6 @@ a:hover{
 #intro h2:first-child::first-letter{ /* H */
     font-size: 1.5em;
     font-family: 'Raleway', Verdana, sans-serif;
-}
-
-#intro-inner{
-    padding-top: 4rem;
-    padding-bottom: 2rem;
 }
 
 #intro h3{ /* This is Raj */
@@ -582,7 +587,6 @@ blockquote{
     0% {background: var(--oxford-blue)}
     50% {background: var(--dark-sienna)}
     100% {background: var(--rich-black)}
-    /* 100% {background: var(--raisin-black)} */
     /* 0% {background: linear-gradient(var(--rich-black), var(--oxford-blue))}
     50% {background: linear-gradient(var(--dark-sienna), var(--oxford-blue))}
     100% {background: linear-gradient(var(--dark-sienna), var(--raisin-black))} */

@@ -25,7 +25,7 @@
 
     <!-- ********************************* HEADER ************************************************** -->
 
-    <div class="header py-3" id="header">
+    <div class="header py-3 d-none" id="header">
         <div class="container-fluid-sm">
 
             <h2 class="text-center text-dark">RAJANBIR SINGH</h2>
@@ -53,41 +53,7 @@
         NAVBAR
         ************************************************** -->
 
-    <nav class="navbar navbar-expand-sm sticky-top fade show py-1 my-0" id="topNavBar">
-        <div class="container-sm">
-
-            <!-- Navbar-brand element to appear/disappear on scroll -->
-            <div class="beforeScroll" id="divToShowHide">
-                <a class="navbar-brand text-primary bg-light d-inline rounded p-1 my-0" href="#header">RS</a>
-            </div>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
-                <i class="fas fa-bars text-primary bg-light py-1 px-2 my-0 rounded"></i>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center font-weight-bold">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link px-3 fade show">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience-outer" class="nav-link px-3 fade show">Experience & Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link px-3 fade show">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link px-3 fade show">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="docs/rajCSResume.pdf" target="_blank" class="nav-link px-3 fade show">Resume
-                            <i class="fas fa-external-link-alt fa-sm"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
+    
 
         <!-- ********************************************************
             MAIN CONTENT
@@ -97,32 +63,74 @@
         <div data-spy="scroll" data-target="#topNavBar" data-offset="0" id="scroll_data">
             <!-- Every part of the page (aboutme, experience, etc) is wrapped in its individual container-fluid to span full-width colorful elements, but the text/data inside every cont. fluid is wrapped with a container to center the text and for a nice asthetic feel.  -->
 
-            <!-- ******************************
-                INTRO
-                ******************************* -->
-            <div class="container-fluid-sm text-center" id="intro">
-
-                <div id="particles-js"></div>
-
-                <div class="row justify-content-around" id="intro-inner">
-                    <!-- Intro text -->
-                    <div class="col-sm-4 container-bodys show-on-scroll p-3 my-3 rounded">
-                        <h2 class="text-light text-center p-1" id="intro-top">Hey!</h2>
-                        <h3 class="shadow text-center rounded bg-light p-1" id="intro-bottom">I'm Raj.</h3>
+            <div id="intro-wrapper">
+    
+                <nav class="navbar navbar-expand-sm sticky-top fade show py-1 my-0" id="topNavBar">
+                    <div class="container-sm">
+                        
+                        <!-- Navbar-brand element to appear/disappear on scroll -->
+                        <div class="beforeScroll" id="divToShowHide">
+                            <a class="navbar-brand text-primary bg-light d-inline rounded p-1 my-0" href="#header">RS</a>
+                        </div>
+                        
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                        <i class="fas fa-bars text-primary bg-light py-1 px-2 my-0 rounded"></i>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center font-weight-bold">
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link px-3 fade show">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#experience-outer" class="nav-link px-3 fade show">Experience & Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#education" class="nav-link px-3 fade show">Education</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link px-3 fade show">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="docs/rajCSResume.pdf" target="_blank" class="nav-link px-3 fade show">Resume
+                                    <i class="fas fa-external-link-alt fa-sm"></i></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
+                    
+                </nav>
+                
+                
+                    <!-- ******************************
+                    INTRO
+                    ******************************* -->
+                    <div class="container-fluid-sm text-center" id="intro">
+                        
+                        <!-- <div id="particles-js"></div> -->
+                        
+                        <div class="row justify-content-around" id="intro-inner">
+                            <!-- Intro text -->
+                            <div class="col-sm-4 container-bodys show-on-scroll p-3 my-3 rounded">
+                                <h2 class="text-light text-center p-1" id="intro-top">Hey!</h2>
+                                <h3 class="shadow text-center rounded bg-light p-1" id="intro-bottom">I'm Raj.</h3>
+                            </div>
+                            
+                        </div>
+                        <div class="container text-center">
+                            <p class="text-center text-light my-3" id="intro-text">I'm a student & an aspiring Full-Stack Developer.</p>
+                            <i class="fas fa-arrow-alt-circle-down bg-dark" id="scroll-down-icon"></i>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
-                <div class="container text-center">
-                    <p class="text-center text-light my-3" id="intro-text">I'm a student & an aspiring Full-Stack Developer.</p>
-                    <i class="fas fa-arrow-alt-circle-down bg-dark" id="scroll-down-icon"></i>
-                </div>
 
-            </div>
-
-            <!-- ***********************************
-                ABOUT ME
-                ************************************ -->
-            <div class="container-fluid-sm" id="about">
+                    <!-- ***********************************
+                        ABOUT ME
+                        ************************************ -->
+                        <div class="container-fluid-sm" id="about">
 
                 <h4 class="container-titles show-on-scroll shadow px-2 py-1 rounded text-center mx-auto">About me</h4>
                 <div class="container shadow-lg text-center justify-content-center rounded p-3">
